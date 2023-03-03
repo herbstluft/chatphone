@@ -1,0 +1,17 @@
+html{
+    background-color: #f7f7f7;
+}
+body{
+    background-color: #f7f7f7;
+}
+.barra{
+    width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+.text-bar{
+    font-size: 14px;
+    color: black;
+    opacity: 1;
+    font-weight: 300;
+}
