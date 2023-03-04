@@ -34,3 +34,10 @@ body{
   letter-spacing: -.022em;
   line-height: 1.47059;
 }
+.input{
+  border-radius: 15px;
+  background-color: transparent;
+}
+.form-control-select{
+  background-color: aqua;
+}
