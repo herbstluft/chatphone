@@ -37,7 +37,11 @@ body{
 .input{
   border-radius: 15px;
   background-color: transparent;
+  border: 1px solid rgba(214, 214, 214, 0.909);
 }
-.form-control-select{
-  background-color: aqua;
+.nav-link:hover{
+  color: #0071e3 ;
+}
+a{
+  text-decoration: none;
 }
