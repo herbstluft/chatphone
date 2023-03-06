@@ -69,12 +69,12 @@
                        
 
                         <div style="width:80%; margin: auto; position: relative; left: 5%;">
-                            <form action="" method="get">
+                            <form action="../src/scripts/registrar.php" method="post">
                                 
                                     <div class="row">
                                         <div class="col-11 col-md-5">
                                             <div class="form-floating">
-                                                <input style="border-radius: 10px;" type="text" class="form-control input" id="floatingInput" placeholder="name@example.com">
+                                                <input style="border-radius: 10px;" type="text" class="form-control input" id="floatingInput" name="nombre">
                                                 <label for="floatingInput">Nombre &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
                                                 </label> 
                                             </div>
@@ -82,7 +82,7 @@
                                     <br><br><br>
                                         <div class="col-11 col-md-5 offset-md-1 ">
                                             <div class="form-floating">
-                                                <input style="border-radius: 10px;" type="text" class="form-control input" id="floatingInput" placeholder="name@example.com">
+                                                <input style="border-radius: 10px;" type="text" class="form-control input" id="floatingInput" name="apellido">
                                                 <label for="floatingInput">Apellidos &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
                                                 </label> 
                                             </div>
@@ -91,14 +91,14 @@
                                     </div>
                                 <br>
                                     <div class="form-floating" style="width: 91.5%;">
-                                        <input style="border-radius: 10px;" type="number" class="form-control input" id="floatingInput" placeholder="name@example.com">
+                                        <input style="border-radius: 10px;" type="number" class="form-control input" id="floatingInput" name="telefono">
                                         <label for="floatingInput">Numero de telefono &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
                                             </label> 
                                     </div>
 
                                     <br>
                                     <div class="form-floating" style="width: 91.5%;">
-                                        <input style="border-radius: 10px;" type="email" class="form-control input" id="floatingInput" placeholder="name@example.com">
+                                        <input style="border-radius: 10px;" type="email" class="form-control input" id="floatingInput" name="correo">
                                         <label for="floatingInput">Correo electrónico &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
                                             </label> 
                                     </div>
@@ -106,14 +106,14 @@
                                 <br>
 
                                 <div class="form-floating" style="width: 91.5%;">
-                                    <input style="border-radius: 10px" type="password" class="form-control input" id="floatingInput" placeholder="name@example.com">
+                                    <input style="border-radius: 10px" type="password" class="form-control input" id="floatingInput" name="contrasena1">
                                     <label for="floatingInput">Contraseña &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</label> 
                                 </div>
 
                                 <br>
 
                                 <div class="form-floating" style="width: 91.5%;">
-                                    <input style="border-radius: 10px" type="password" class="form-control input" id="floatingInput" placeholder="name@example.com">
+                                    <input style="border-radius: 10px" type="password" class="form-control input" id="floatingInput" name="contrasena2">
                                     <label for="floatingInput">Confirmar Contraseña &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</label> 
                                 </div>
                                 <br>
@@ -138,7 +138,7 @@
                                   </div>
                                   <br>
                                 <center>
-                                    <button type="submit" style="margin-left: -7%; border:none; border-radius:15px; background-color: #0071e3; color: white; padding: 10px 25px; ">Iniciar sesión</button>
+                                    <button type="submit"  style="margin-left: -7%; border:none; border-radius:15px; background-color: #0071e3; color: white; padding: 10px 25px; ">Crear ChatPhone ID</button>
                                     </center>
                                     
                               
