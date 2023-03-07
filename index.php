@@ -53,14 +53,14 @@
                 <div style="margin-left: 45%;"></div>
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link text-bar" aria-current="page" href="views/login.html">Iniciar sesión</a>
+                    <a class="nav-link text-bar" aria-current="page" href="views/login.php">Iniciar sesión</a>
                     
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-bar" href="views/crear-chatphone-id.html">Crear tu ChatPhone ID</a>
+                    <a class="nav-link text-bar" href="views/crear-chatphone-id.php">Crear tu ChatPhone ID</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-bar" href="views/preguntas.html">Preguntas frecuentes</a>
+                    <a class="nav-link text-bar" href="views/preguntas.php">Preguntas frecuentes</a>
                   </li>
                 </ul>
                
@@ -102,7 +102,7 @@
 
             <br>
             <center>
-              <a href="views/login.html">
+              <a href="views/login.php">
             <button type="button" style="margin-left: 5.5%; border:none; border-radius:980px; background-color: #0071e3; color: white; padding: 10px 25px; ">Iniciar sesión</button>
               </a>
             </center>

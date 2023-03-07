@@ -20,7 +20,7 @@
         <nav style="padding-left: 15%; border-bottom: 1px solid #d8d8d8;     backdrop-filter: saturate(180%) blur(20px);
         background-color: rgba(255,255,255,.72);" class="barra navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-              <a style="font-weight: 500;" class="navbar-brand" href="../index.html">ChatPhone</a>
+              <a style="font-weight: 500;" class="navbar-brand" href="../index.php">ChatPhone</a>
               <button style="border: 0px ; background-color: transparent;" class="" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="d-block d-sm-none bi bi-chevron-down" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
@@ -38,11 +38,11 @@
                 <div style="margin-left: 45%;"></div>
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link text-bar" aria-current="page" href="login.html">Iniciar sesión</a>
+                    <a class="nav-link text-bar" aria-current="page" href="login.php">Iniciar sesión</a>
                     
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-bar" href="crear-chatphone-id.html">Crear tu ChatPhone ID</a>
+                    <a class="nav-link text-bar" href="crear-chatphone-id.php">Crear tu ChatPhone ID</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link text-bar">Preguntas frecuentes</a>

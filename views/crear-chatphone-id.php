@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,6 +14,7 @@
     <link rel="stylesheet" href="../css/estilos.css">
     <!--Boostrap--> 
 </head>
+
 <body style="background-color: white;">
 
 
@@ -20,7 +22,7 @@
         <nav style="padding-left: 15%; border-bottom: 1px solid #d8d8d8;     backdrop-filter: saturate(180%) blur(20px);
         background-color: rgba(255,255,255,.72);" class="barra navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-              <a style="font-weight: 500;" class="navbar-brand" href="../index.html">ChatPhone</a>
+              <a style="font-weight: 500;" class="navbar-brand" href="../index.php">ChatPhone</a>
               <button style="border: 0px ; background-color: transparent;" class="" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="d-block d-sm-none bi bi-chevron-down" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
@@ -38,14 +40,14 @@
                 <div style="margin-left: 45%;"></div>
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link text-bar" aria-current="page" href="login.html">Iniciar sesión</a>
+                    <a class="nav-link text-bar" aria-current="page" href="login.php">Iniciar sesión</a>
                     
                   </li>
                   <li class="nav-item">
                     <a class="nav-link text-bar" href="#">Crear tu ChatPhone ID</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-bar" href="preguntas.html">Preguntas frecuentes</a>
+                    <a class="nav-link text-bar" href="preguntas.php">Preguntas frecuentes</a>
                   </li>
                 </ul>
                
@@ -69,12 +71,12 @@
                        
 
                         <div style="width:80%; margin: auto; position: relative; left: 5%;">
-                            <form action="../src/scripts/registrar.php" method="post">
+                            <form action="" method="post">
                                 
                                     <div class="row">
                                         <div class="col-11 col-md-5">
                                             <div class="form-floating">
-                                                <input style="border-radius: 10px;" type="text" class="form-control input" id="floatingInput" name="nombre">
+                                                <input style="border-radius: 10px;" type="text" class="form-control input" id="floatingInput" name="nombre" required>
                                                 <label for="floatingInput">Nombre &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
                                                 </label> 
                                             </div>
@@ -82,7 +84,7 @@
                                     <br><br><br>
                                         <div class="col-11 col-md-5 offset-md-1 ">
                                             <div class="form-floating">
-                                                <input style="border-radius: 10px;" type="text" class="form-control input" id="floatingInput" name="apellido">
+                                                <input style="border-radius: 10px;" type="text" class="form-control input" id="floatingInput" name="apellido" required>
                                                 <label for="floatingInput">Apellidos &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
                                                 </label> 
                                             </div>
@@ -91,14 +93,14 @@
                                     </div>
                                 <br>
                                     <div class="form-floating" style="width: 91.5%;">
-                                        <input style="border-radius: 10px;" type="number" class="form-control input" id="floatingInput" name="telefono">
+                                        <input style="border-radius: 10px;" type="tel" class="form-control input" id="floatingInput" name="telefono" required maxlength="10" minlength="10">
                                         <label for="floatingInput">Numero de telefono &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
                                             </label> 
                                     </div>
 
                                     <br>
                                     <div class="form-floating" style="width: 91.5%;">
-                                        <input style="border-radius: 10px;" type="email" class="form-control input" id="floatingInput" name="correo">
+                                        <input style="border-radius: 10px;" type="email" class="form-control input" id="floatingInput" name="correo" required>
                                         <label for="floatingInput">Correo electrónico &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
                                             </label> 
                                     </div>
@@ -106,14 +108,14 @@
                                 <br>
 
                                 <div class="form-floating" style="width: 91.5%;">
-                                    <input style="border-radius: 10px" type="password" class="form-control input" id="floatingInput" name="contrasena1">
+                                    <input style="border-radius: 10px" type="password" class="form-control input" id="floatingInput" name="contrasena1" required minlength="8"  maxlength="20">
                                     <label for="floatingInput">Contraseña &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</label> 
                                 </div>
 
                                 <br>
 
                                 <div class="form-floating" style="width: 91.5%;">
-                                    <input style="border-radius: 10px" type="password" class="form-control input" id="floatingInput" name="contrasena2">
+                                    <input style="border-radius: 10px" type="password" class="form-control input" id="floatingInput" name="contrasena2" required  minlength="8"  maxlength="20">
                                     <label for="floatingInput">Confirmar Contraseña &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</label> 
                                 </div>
                                 <br>
@@ -152,9 +154,103 @@
 
                 </div>
                 <!--Logo y login-->
-                   <br><br> 
+                    
 
 
 
 </body>
 </html>
+
+
+<?php 
+
+            
+          use MyApp\data\Database;
+          use MyApp\query\ejecuta;
+          use MyApp\query\Select;
+          //ocultar warnings
+error_reporting(E_ERROR | E_PARSE);
+
+          require("../vendor/autoload.php");
+
+          $query = new Select();
+          $insert = new ejecuta();
+
+          if($_POST){
+
+          extract($_POST);
+
+          $verficiacion_nombres="SELECT * from personas WHERE personas.nombre='$nombre' and  personas.apellido='$apellido'";
+          $valor_nombres=$query->seleccionar($verficiacion_nombres);
+
+          if(empty($valor_nombres)){
+
+            $verficiacion_telefono="SELECT * from usuarios WHERE usuarios.telefono='$telefono'";
+            $valor_telefono=$query->seleccionar($verficiacion_telefono);   
+              if(empty($valor_telefono)){
+
+                $verficiacion_correo="SELECT * from personas WHERE personas.correo='$correo'";
+                $valor_correo=$query->seleccionar($verficiacion_correo);      
+                if(empty($valor_correo)){
+
+                        if($contrasena1==$contrasena2)
+                            {
+                                  $insert_reg="INSERT INTO personas (nombre, apellido, correo) VALUES ('$nombre', '$apellido', '$correo')";
+                                  $insert  -> ejecutar($insert_reg);
+                        
+                                  //obtener el id del cliente
+                                  $cadena="select personas.id_persona as id from personas WHERE personas.nombre='$nombre' and personas.apellido='$apellido' and personas.correo='$correo'";
+                        
+                                  $id=$query -> seleccionar($cadena);
+                        
+                                 
+                                  
+                                  foreach ($id as $i)
+                                  $id_persona= $i->id;
+                          
+                                  //Encriptar contraseña
+                                  $passCifrada1 = password_hash($contrasena2,PASSWORD_DEFAULT);
+                                  $passCifrada = "$passCifrada1";
+
+                                  $insert_cliente="INSERT INTO usuarios (telefono, contrasena, id_persona) VALUES ('$telefono','$passCifrada','$id_persona')";
+                                  $insert -> ejecutar($insert_cliente);
+                      
+                                  error_reporting(E_ERROR | E_PARSE);
+                                  echo  "<div class='alert alert-success text-center' role='alert' style='margin-left:10%; margin-right:10%;'>
+                                  Chatphone ID creado exitosamente, <a href='login.php'> Inicie sesión </a>!
+                                </div>";    
+                                /*Registro exitoso y despues se dirige a la pagina principal*/
+                            }
+                            else{
+                              echo  "<div class='alert alert-warning text-center' role='alert' style='margin-left:10%; margin-right:10%;'>
+                              Las contraseñas no coinciden!
+                            </div>";    
+                            }  
+
+                } 
+                else{
+                  echo  "<div class='alert alert-danger text-center' role='alert' style='margin-left:10%; margin-right:10%;'>
+                  Este correo ya existe, eliga otro!
+                </div>";  
+              }
+            }
+                else{
+                  echo  "<div class='alert alert-danger text-center' role='alert' style='margin-left:10%; margin-right:10%;'>
+                  Este numero ya existe, introduzca otro!
+                </div>";   
+              }  
+            
+          
+
+
+           
+   
+          }
+          else{
+            echo  "<div class='alert alert-danger text-center' role='alert' style='margin-left:10%; margin-right:10%;'>
+            Estos nombres ya existen en el sistema!
+          </div>";                
+            
+          }
+        }
+        ?>
