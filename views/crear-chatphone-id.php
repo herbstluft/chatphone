@@ -67,7 +67,7 @@
                     <div  style="margin-top:-5%">
                         <h1 style="font-size: 35px; color: rgb(73, 73, 73);; font-style: inherit;" class="text-center">Crea tu ChatPhone ID</h1>
                         <p style="font-size: 18px; " class="text-center">Sólo necesitas un ChatPhone ID para acceder al servicio de mensajeria.</p>
-                        <p style="font-size: 18px; " class="text-center">¿Ya tienes un ChatPhone ID? <a href="login.html">Inicia sesión </a> </p>
+                        <p style="font-size: 18px; " class="text-center">¿Ya tienes un ChatPhone ID? <a href="login.php">Inicia sesión </a> </p>
                        
 
                         <div style="width:80%; margin: auto; position: relative; left: 5%;">
@@ -213,9 +213,9 @@ error_reporting(E_ERROR | E_PARSE);
                                   $passCifrada = "$passCifrada1";
 
                                   $insert_cliente="INSERT INTO usuarios (telefono, contrasena, id_persona) VALUES ('$telefono','$passCifrada','$id_persona')";
-                                  $insert -> ejecutar($insert_cliente);
+                                  $insert->ejecutar($insert_cliente);
                       
-                                  error_reporting(E_ERROR | E_PARSE);
+                               
                                   echo  "<div class='alert alert-success text-center' role='alert' style='margin-left:10%; margin-right:10%;'>
                                   Chatphone ID creado exitosamente, <a href='login.php'> Inicie sesión </a>!
                                 </div>";    

@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en" style="background-color: white;">
 <head>
@@ -54,14 +56,52 @@
         </nav>
         <!--Barra de navegacion-->
 
-                <!--Logo y login-->
+
+
+          <!--Logo y login-->
                 <div class="container">
                     <div style=" padding: 3%; padding-top: 3%;">
                     <center>
                     <img src="../img/logo.png" alt="" srcset="" width="310px" height="310px">
                     </center>
+
+                    <?php
+ use MyApp\query\Select;
+ use MyApp\query\ejecuta;
+         require("../vendor/autoload.php");
+         $insert= new ejecuta();
+         $query = new Select();
+         error_reporting(E_ERROR | E_PARSE);
+if($_POST){
+  extract($_POST);
+        $consulta_hash="Select * from usuarios inner join
+        personas on personas.id_persona=usuarios.id_persona 
+        where usuarios.telefono='$phone'";
+        $date_person=$query->seleccionar($consulta_hash);
+        
+        foreach ($date_person as $decrypted)
+        $password_hash= $decrypted->contrasena;
+    
+        $name_complete=$decrypted->nombre.' '.$decrypted->apellido;
+        
+
+      if(password_verify($password,$password_hash)){
+        session_start();
+        $_SESSION['user']=$name_complete;
+        header('location:app/home.php');
+      }
+      else{
+        echo  "<div class='alert alert-danger text-center' role='alert' style='margin-left:10%; margin-top:-2%; margin-bottom:7%; margin-right:10%;'>
+        Contraseña o numero incorrecto.
+      </div>";  
+      }
+}
+?>
+      
                     </div>
+                  
                     
+                    <!--FORM-->
                     <div  style="margin-top:-5%;">
                         <h1 style="font-size: 35px; color: rgb(73, 73, 73);; font-style: inherit;" class="text-center">ChatPhone ID</h1>
                         <p style="font-size: 18px; " class="text-center">Administra tu cuenta de ChatPhone</p>
@@ -89,52 +129,21 @@
                                     <hr>
                                 <p style="font-size: 17px; " class="text-center">Con ChatPhone, estar cerca de tus personas favoritas es fácil y divertido.</p>
                                 
-                                
                                
                             </form>
                         </div>
 
 
                     </div>
-        
+                    <!--FORM-->
 
                 </div>
                 <!--Logo y login-->
                    <br><br> 
 
-
-
 </body>
 </html>
 
 
-<?php
- use MyApp\query\Select;
- use MyApp\query\ejecuta;
-         require("../vendor/autoload.php");
-         $insert= new ejecuta();
-         $query = new Select();
-if($_POST){
-  extract($_POST);
-  session_start();
-        $consulta_hash="Select * from usuarios inner join
-        personas on personas.id_persona=usuarios.id_persona 
-        where usuarios.telefono='$phone'";
-        $date_person=$query->seleccionar($consulta_hash);
-        
-        foreach ($date_person as $decrypted)
-        $password_hash= $decrypted->contrasena;
-        echo $password_hash;
-        $name_complete=$decrypted->nombre.' '.$decrypted->apellido;
-        echo $name_complete;
 
-      if(password_verify($password,$password_hash)){
-        $_SESSION['user']=$name_complete;
-        header('location:../admin/index.php');
-        echo "contrasena correcta";
-      }
-      else{
-        echo "contrasena incorrecta";
-      }
-}
-?>
+
