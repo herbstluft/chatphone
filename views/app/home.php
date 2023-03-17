@@ -114,6 +114,11 @@ if(isset($_SESSION['user'])){
     padding: 1rem 1.25rem;
     color: #95aac9;
 }
+
+.dropdown-item:hover{
+    background-color: #f1f1f1;
+
+}
 .message-out .message-gallery, .message-out .message-text {
     margin-left: .25rem;
     margin-right: 0;
@@ -161,6 +166,11 @@ if(isset($_SESSION['user'])){
 .message-inner {
     margin-left: .5rem;
 }
+.sombras{
+  box-shadow: 0px -1px 8px -2px rgba(0,0,0,0.04);
+-webkit-box-shadow: 0px -1px 8px -2px rgba(0,0,0,0.04);
+-moz-box-shadow: 0px -1px 8px -2px rgba(0,0,0,0.04);
+}
 </style>
 
 <body>
@@ -206,14 +216,14 @@ if(isset($_SESSION['user'])){
       <li>
       <br>
         <!--Grupos--> 
-        <a href="#" class="nav-link py-3 rounded-0" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Dashboard" data-bs-original-title="Dashboard">
+        <a href="home.php?grupos=grupos" class="nav-link py-3 rounded-0" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Dashboard" data-bs-original-title="Dashboard">
         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAErUlEQVR4nM1Wa4xdUxQe4hGPRFASCZFSaf3xakT8EG8Sj/iBCBWRYiKhXkVDxOCHCCbM9Kx1ezX1qI6ZrnUuSak3E6mZu9ZxY6bSIsUPP9pI1avqUaVXvn3OnTn3zpnOXCqxk5Ocs8/e37fWtx57d3T8X0ekdhmJrWSxd0n9oSeWjx7QuqZHPj6M1J5k8fdZ7EWS5Mx/RcriD7DaNlbrJrF7WW2E1NfnycuV2hEktonFPiC1u1msRGrbI/Hr/5mn8dDRpPYHq53RmBNZtw+Jj7JY15hx6s+y2hv1en2PnMHXkPjW8qra/u17q34li31VML+Ixd5pfJPa5yXxefk1XYODe5H6b0vET2+bmOLkUhb7oVyu7d00r/4Ui60a+xYfjdTuzK8p99VmkNjOUsVObJu4W4b3Y/WNrEYNciQNif0SiV3RWMfiC0n9G9LqCfiOZPBAFqvAoLz8bY2MaCep/QjZWb3O4i9NkFV8kNX+YvUvkIyQuRzX5kybqBRXj2O1+0msh8QXIINJ7UtWf5TF7mHxV5BwJbFbG3tY7DHMkdqKzPvHU6V8DYt1svrTwIxkeFaxd+o3s/gOUvNQi+rr4UVJquc3q2AXh3WxnU1i17H6z1RJTp2QH+p1Et9A6v3ADBUi1tlEiuwj9T9RBmMSdtX3hKek9u3il/3Q/HpW6yWxN1n9U9Rua2Kx2BYSeyQf45L4PBgcafW0vLfLWW2gVQVsJLHPWO2WZmK/JK1xrzeSalwRX8Bi64oSi9WFxJ4fnxAbQnwKIoA6XYGYj333V49HOYVES+WMMTdObD0IVREWiy8EV97KmNS4kFjsIzSNzMC5IcPVBuB1+tgA6h3/svX3sVhSTGwleN10ELD6r5H4Sc3eJtey2O+9YjMz773IQFJfQuJVvJf7a8eiV7d2M9bkZJQZEq/FM4/wI1gFSdQlZK/YDWFjZehwSAvgVmKUSvjXV5uRSXpjtndlJm8pYKv1drQ2AdRa2gRsM6t/wuo/QUKS5KrgSVybE+Lat+bgVuKlMnxI2lyS2ZmCVwf5gRGwbDOwEQZwhU3IPlZ/gdS+JrULGtmIkyhYrrYNDaPn9Q37svr3+ZLLh4TUv0tPr+rtqG1Wm99otYEj9gvBwWrPBQ70XWzCMViYEHFyXqg/GZ4Fi1HXmMv/D3Pqi9D5skZxThFWr9jMoERcvRyxHcyfr4Xk6q/hhoGmgk6UlpFtCheArH+nDce68yfXJFgP46aCFN9S0upZu1qc3iz8LRa7A1kOcBK/K/RmsVcxB4lJ/e3J+kFjoNWCExbUGzU42QjNHoSIXYGMkfq54YqUGtU5BdZccE6fOHQqmz/Zmkj9pgxresSkth33plJcvQjBL0vtIGRdKBFJZmfJ9x5KA1k7GWB2H9uKtdiDvcAAFjCBDQ5wgTNt+OKrs7qrFzwbwxEpvnZXnqTe+Nr0OA3n8UQsQV/w1eAc2wTLcD9G2SyuDJ/CcXIMLM1JXZuSWL3WkBp7gQEsYAK77atQSmwjUxPbyFQxbmsga3FRSCW3Z0jsQVa/DQ/eSW1pFo4dWNuxOwf1J0fhQkDiyxAnEvswffDuy/Cvp2JH7lbS/2L8DWpbXfMayLtNAAAAAElFTkSuQmCC">
         </a>
       </li>
       <li>
         <br>
         <!--Chats--> 
-        <a href="#" class="nav-link py-3 rounded-0" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Orders" data-bs-original-title="Orders">
+        <a href="home.php?home=home" class="nav-link py-3 rounded-0" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Orders" data-bs-original-title="Orders">
         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="#96abc9" class="bi bi-chat-left" viewBox="0 0 16 16">
           <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
         </svg>
@@ -240,25 +250,15 @@ if(isset($_SESSION['user'])){
       </li>
     </ul>
 <br>
-      <!--Perfil-->
-    <div class="dropdown">
-      <a href="#" class="d-flex align-items-center justify-content-center p-3 link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-        <img src="https://github.com/mdo.png" alt="mdo" width="50" height="50" class="rounded-circle">
-      </a>
-      <ul class="dropdown-menu text-small shadow" style="">
-        <li><a class="dropdown-item" href="#">New project...</a></li>
-        <li><a class="dropdown-item" href="#">Settings</a></li>
-        <li><a class="dropdown-item" href="#">Profile</a></li>
-        <li><hr class="dropdown-divider"></li>
-        <li><a class="dropdown-item" href="#">Sign out</a></li>
-      </ul>
-    </div>
 </div>
 <!--Barra herramientas-->
 
 
 
-
+<?php
+if(isset($_GET['home']))
+{
+?>
 <!--Barra de Chats-->
 <div class="col-lg-4" style="background-color:#f6f9fb; overflow-x:hidden; overflow-y:scroll; height:49rem; padding:2%">
   <p style="font-size: 24px; font-weight: 600;">Chats</p>
@@ -564,7 +564,92 @@ if(isset($_SESSION['user'])){
                                             
 </div>
 <!--Barra de Chats-->
+<?php
+}
+?>
 
+<?php
+if(isset($_GET['grupos']))
+{
+?>
+<!--Barra de grupos-->
+<div class="col-lg-4" style="background-color:#f6f9fb; overflow-x:hidden; overflow-y:scroll; height:49rem; padding:2%">
+  <p style="font-size: 24px; font-weight: 600;">Grupos</p>
+  
+<div style="margin-top:-2% ;"></div>
+
+  <img src="https://img.icons8.com/ios/23/a2b5cf/search--v1.png" style="position:relative; top:5.9%; left:5%"/>
+  <input type="text"  style="width:100%; background-color:#ebf1f7; border:0px; border-radius:10px; height:8%; padding:5%; padding-left:15%; color: #848484; outline:none" placeholder="Busca chats o usuarios">
+  
+  <br><br><br>
+          <a href="" style="text-decoration: none; color:black">
+                                            <div class="card-body" style="background-color: white; padding-top: 5%;  height: 17%; border-radius: 15px; margin-bottom: 4%;">
+                                                <div class="row gx-5">
+                                                    <div class="col-auto">
+                                                        <div class="avatar avatar-online">
+                                                            <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" class="img-profile">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col" style="margin-left: -7%;">
+                                                        <div class="d-flex align-items-center mb-3">
+                                                            <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
+                                                            <span class="text-muted ms-2" style=" --bs-text-opacity: 1;color: #bfccdf!important;font-size: .665em;">12:45 PM</span>
+                                                        </div>
+
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="line-clamp me-auto">
+                                                                Hello! Yeah, I'm going to meet my friend of mine at the departments stores now.
+                                                            </div>
+
+                                                            <div class="badge badge-circle bg-primary ms-5">
+                                                                <span>3</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br><br>
+                                            </div>
+          </a>
+
+
+          <a href="" style="text-decoration: none; color:black">
+                                            <div class="card-body" style="background-color: white; padding-top: 5%;  height: 17%; border-radius: 15px; margin-bottom: 4%;">
+                                                <div class="row gx-5">
+                                                    <div class="col-auto">
+                                                        <div class="avatar avatar-online">
+                                                            <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" class="img-profile">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col" style="margin-left: -7%;">
+                                                        <div class="d-flex align-items-center mb-3">
+                                                            <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
+                                                            <span class="text-muted ms-2" style=" --bs-text-opacity: 1;color: #bfccdf!important;font-size: .665em;">12:45 PM</span>
+                                                        </div>
+
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="line-clamp me-auto">
+                                                                Hello! Yeah, I'm going to meet my friend.
+                                                            </div>
+
+                                                           
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br><br>
+                                            </div>
+          </a>
+
+          
+
+        
+                                            
+</div>
+<!--Barra de grupos-->
+<?php
+}
+?>
 
 
 <!--Barra de conversacion-->
@@ -583,11 +668,19 @@ if(isset($_SESSION['user'])){
                                                     <div class="col-md-10 " style="margin-left: -1%;">
                                                         <div class="d-flex align-items-center mb-3">
                                                             <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
-                                                            <div style="position:relative; left:5%;">
-                                                              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="#96abc9" class="bi bi-three-dots" viewBox="0 0 16 16">
-                                                                <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
-                                                              </svg>
+                                                            <div style="position:relative; left:5%; top: 10px;"  data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2787f5" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                                                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                                                  </svg>
                                                             </div>
+                                                            <div class="dropdown-center">
+                                                               
+                                                                <ul style="background-color:#ffffff; backdrop-filter: blur(35px); border: 0.5px; margin: 60%;" class="sombras dropdown-menu">
+                                                                  <li><a class="dropdown-item" style="margin-top: 5%;" href="#">Info. del contacto</a></li>
+                                                                  <li><a class="dropdown-item" style="margin-top: 5%;" href="#">Vaciar mensajes</a></li>
+                                                                  <li><a class="dropdown-item" style="margin-top: 5%; color: red;" href="#">Eliminar chat</a></li>
+                                                                </ul>
+                                                              </div>
                                                         </div>
 
                                                         <div class="line-clamp me-auto text-truncate" style="margin-top:-2%; width:50%">
