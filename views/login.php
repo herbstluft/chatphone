@@ -88,7 +88,7 @@ if($_POST){
       if(password_verify($password,$password_hash)){
         session_start();
         $_SESSION['user']=$name_complete;
-        header('location:app/home.php');
+        header('location:app/home.php?inicio');
       }
       else{
         echo  "<div class='alert alert-danger text-center' role='alert' style='margin-left:10%; margin-top:-2%; margin-bottom:7%; margin-right:10%;'>
