@@ -235,7 +235,7 @@ if(isset($_SESSION['user'])){
       <li>
         <br>
         <!--Ajustes-->
-        <a href="#" class="nav-link py-3 rounded-0" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Customers" data-bs-original-title="Customers">
+        <a href="?ajustes" class="nav-link py-3 rounded-0" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Customers" data-bs-original-title="Customers">
         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="#96abc9" class="bi bi-gear" viewBox="0 0 16 16">
           <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
           <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
@@ -732,6 +732,137 @@ if(isset($_GET['archivados']) || isset($_GET['archivadoid']))
 ?>
 <!--Barra de Archivados-->
 
+
+
+
+<!--Barra de Ajustes-->
+<?php
+if(isset($_GET['ajustes']))
+{
+?>
+<div class="col-lg-11" style="background-color:#f6f9fb; overflow-x:hidden; overflow-y:scroll; height:49rem; padding:2%">
+  <p style="font-size: 24px; font-weight: 600;">Ajustes</p>
+  
+<div style="margin-top:-2% ;"></div>
+<br><br>
+<div class="card border-0">
+                                        <div class="card-body">
+                                            <div class="row align-items-center gx-5">
+                                                <div class="col-auto">
+                                                    <div class="avatar">
+                                                        <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" style="height: 60px;width: 60px;border-radius: 50%;position: relative;display: -webkit-box;display: -ms-flexbox;display: flex;">
+
+                                                      
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <h5>William Pearson</h5>
+                                                    <p>wright@studio.com</p>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <a href="#" class="text-muted">
+                                                        <div class="icon">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+</div>
+  <br><br>
+
+  <span style="    --bs-text-opacity: 1;color: rgb(191, 204, 223) !important;font-size: 0.875em;">Cuenta</span>
+    <br><br>
+
+  <div class="card border-0">
+                                        <div class="card-body">
+                                            <div class="row align-items-center gx-5">
+                                                <div class="col-auto">
+                                                    <div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header-collapsed collapsed" id="headingOne" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+        <p style="color: #293951;font-size: .9375rem;"><b>Configuracion del usuario</b></p>
+        <p style="color: #95aac9;font-size: .9175rem;">Cambiar la configuración de tu perfil</p>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+</div>
+          <a href="?archivadoid=1" style="text-decoration: none; color:black">
+                                            <div class="card-body" style="background-color: white; padding-top: 5%;  height: 17%; border-radius: 15px; margin-bottom: 4%;">
+                                                <div class="row gx-5">
+                                                    <div class="col-auto">
+                                                        <div class="avatar avatar-online">
+                                                            <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" class="img-profile">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col" style="margin-left: -7%;">
+                                                        <div class="d-flex align-items-center mb-3">
+                                                            <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
+                                                            <span class="text-muted ms-2" style=" --bs-text-opacity: 1;color: #bfccdf!important;font-size: .665em;">12:45 PM</span>
+                                                        </div>
+
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="line-clamp me-auto">
+                                                                Hello! Yeah, I'm going to meet my friend of mine at the departments stores now.
+                                                            </div>
+
+                                                            <div class="badge badge-circle bg-primary ms-5">
+                                                                <span>3</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br><br>
+                                            </div>
+          </a>
+
+
+          <a href="?archivadoid=2" style="text-decoration: none; color:black">
+                                            <div class="card-body" style="background-color: white; padding-top: 5%;  height: 17%; border-radius: 15px; margin-bottom: 4%;">
+                                                <div class="row gx-5">
+                                                    <div class="col-auto">
+                                                        <div class="avatar avatar-online">
+                                                            <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" class="img-profile">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col" style="margin-left: -7%;">
+                                                        <div class="d-flex align-items-center mb-3">
+                                                            <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
+                                                            <span class="text-muted ms-2" style=" --bs-text-opacity: 1;color: #bfccdf!important;font-size: .665em;">12:45 PM</span>
+                                                        </div>
+
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="line-clamp me-auto">
+                                                                Hello! Yeah, I'm going to meet my friend.
+                                                            </div>
+
+                                                           
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br><br>
+                                            </div>
+          </a>
+
+          
+
+        
+                                            
+</div>
+<?php
+}
+?>
+<!--Barra de Ajustes-->
 
 
 <!--Barra de personas-->
