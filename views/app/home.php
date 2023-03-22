@@ -750,19 +750,19 @@ if(isset($_GET['ajustes']))
                                             <div class="row align-items-center gx-5">
                                                 <div class="col-auto">
                                                     <div class="avatar">
-                                                        <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" style="height: 60px;width: 60px;border-radius: 50%;position: relative;display: -webkit-box;display: -ms-flexbox;display: flex;">
+                                                        <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" style="height: 50px;width: 50px;border-radius: 50%;position: relative;display: -webkit-box;display: -ms-flexbox;display: flex;">
 
                                                       
                                                     </div>
                                                 </div>
                                                 <div class="col">
-                                                    <h5>William Pearson</h5>
-                                                    <p>wright@studio.com</p>
-                                                </div>
+                                                    <h5 style="font-size: 15.5px; font-weight: 600;">William Pearson</h5>
+                                                    <p style="font-size:15px; color:#95aac9">¡Hola! estoy usando ChatPhone.</p>
+                                                </div> 
                                                 <div class="col-auto">
                                                     <a href="#" class="text-muted">
                                                         <div class="icon">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
                                                         </div>
                                                     </a>
                                                 </div>
@@ -771,92 +771,58 @@ if(isset($_GET['ajustes']))
 </div>
   <br><br>
 
-  <span style="    --bs-text-opacity: 1;color: rgb(191, 204, 223) !important;font-size: 0.875em;">Cuenta</span>
+ &ensp;&ensp; <span style="--bs-text-opacity: 1;color: rgb(191, 204, 223) !important;font-size: 0.875em;">Cuenta</span>
     <br><br>
 
-  <div class="card border-0">
+    <div class="card border-0">
                                         <div class="card-body">
                                             <div class="row align-items-center gx-5">
-                                                <div class="col-auto">
-                                                    <div class="accordion" id="accordionExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header-collapsed collapsed" id="headingOne" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-        <p style="color: #293951;font-size: .9375rem;"><b>Configuracion del usuario</b></p>
-        <p style="color: #95aac9;font-size: .9175rem;">Cambiar la configuración de tu perfil</p>
-    </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
-    </div>
-  </div>
+                                                <div class="col">
+                                                <h5 style="font-size: 15.5px; font-weight: 600;">Configuracion del perfil</h5>
+                                                    <p style="font-size:15px; color:#95aac9">Cambiar la configuracion de tu perfil</p>
                                                 </div>
                                                 
-                                            </div>
+                                                
+                                                <br><hr style="width:96%; margin:auto; color:#95aac9; opacity:0.2; margin-bottom:3%">
+
+                                            <form action="" method="post">
+                                                <input type="text" style="width:96%; margin:auto; background-color:#ebf1f7; border:0px; margin-bottom:2.5%; border-radius:10px; height:8%; padding:1.6%; padding-left:3%; color: #848484; outline:none" placeholder="Nombe">
+                                                <input type="text" style="width:96%; margin:auto; background-color:#ebf1f7; margin-bottom:2.5%; border:0px; border-radius:10px; height:8%; padding:1.6%; padding-left:3%; color: #848484; outline:none" placeholder="Apellidos">
+                                                <input type="text" style="width:96%; margin:auto; background-color:#ebf1f7; margin-bottom:2.5%; border:0px; border-radius:10px; height:8%; padding:1.6%; padding-left:3%; color: #848484; outline:none" placeholder="Correo Electronico">
+                                                <input type="text" style="width:96%; margin:auto; background-color:#ebf1f7; margin-bottom:2.5%; border:0px; border-radius:10px; height:8%; padding:1.6%; padding-left:3%; color: #848484; outline:none" placeholder="Info.">
+                                                <button type="submit" class="btn btn-primary" style="width: 96%; margin-top:1.2%; padding-top:1.5%; padding-bottom:1.5%"> Guardar</button>
+                                            </form>
+                                            
                                         </div>
-</div>
-          <a href="?archivadoid=1" style="text-decoration: none; color:black">
-                                            <div class="card-body" style="background-color: white; padding-top: 5%;  height: 17%; border-radius: 15px; margin-bottom: 4%;">
-                                                <div class="row gx-5">
-                                                    <div class="col-auto">
-                                                        <div class="avatar avatar-online">
-                                                            <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" class="img-profile">
-                                                        </div>
-                                                    </div>
+                                        </div>
+</div>    
+<br><br>
 
-                                                    <div class="col" style="margin-left: -7%;">
-                                                        <div class="d-flex align-items-center mb-3">
-                                                            <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
-                                                            <span class="text-muted ms-2" style=" --bs-text-opacity: 1;color: #bfccdf!important;font-size: .665em;">12:45 PM</span>
-                                                        </div>
-
-                                                        <div class="d-flex align-items-center">
-                                                            <div class="line-clamp me-auto">
-                                                                Hello! Yeah, I'm going to meet my friend of mine at the departments stores now.
-                                                            </div>
-
-                                                            <div class="badge badge-circle bg-primary ms-5">
-                                                                <span>3</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+&ensp;&ensp; <span style="--bs-text-opacity: 1;color: rgb(191, 204, 223) !important;font-size: 0.875em;">Seguridad</span>
+<br><br>
+<div class="card border-0">
+                                        <div class="card-body">
+                                            <div class="row align-items-center gx-5">
+                                                <div class="col">
+                                                <h5 style="font-size: 15.5px; font-weight: 600;">Contraseña</h5>
+                                                    <p style="font-size:15px; color:#95aac9">Cambia tu contraseña</p>
                                                 </div>
-                                                <br><br>
-                                            </div>
-          </a>
+                                                
+                                                
+                                                <br><hr style="width:96%; margin:auto; color:#95aac9; opacity:0.2; margin-bottom:3%">
 
+                                            <form action="" method="post">
+                                                <input type="password" style="width:96%; margin:auto; background-color:#ebf1f7; border:0px; margin-bottom:2.5%; border-radius:10px; height:8%; padding:1.6%; padding-left:3%; color: #848484; outline:none" placeholder="Contraseña actual">
+                                                <input type="password" style="width:96%; margin:auto; background-color:#ebf1f7; margin-bottom:2.5%; border:0px; border-radius:10px; height:8%; padding:1.6%; padding-left:3%; color: #848484; outline:none" placeholder="Nueva contraseña">
+                                                <input type="password" style="width:96%; margin:auto; background-color:#ebf1f7; margin-bottom:2.5%; border:0px; border-radius:10px; height:8%; padding:1.6%; padding-left:3%; color: #848484; outline:none" placeholder="Verifica la contraseña">
+                                                <button type="submit" class="btn btn-primary" style="width: 96%; margin-top:1.2%; padding-top:1.5%; padding-bottom:1.5%"> Guardar</button>
+                                            </form>
+                                            
+                                        </div>
+                                        </div>
+</div>    
 
-          <a href="?archivadoid=2" style="text-decoration: none; color:black">
-                                            <div class="card-body" style="background-color: white; padding-top: 5%;  height: 17%; border-radius: 15px; margin-bottom: 4%;">
-                                                <div class="row gx-5">
-                                                    <div class="col-auto">
-                                                        <div class="avatar avatar-online">
-                                                            <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" class="img-profile">
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col" style="margin-left: -7%;">
-                                                        <div class="d-flex align-items-center mb-3">
-                                                            <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
-                                                            <span class="text-muted ms-2" style=" --bs-text-opacity: 1;color: #bfccdf!important;font-size: .665em;">12:45 PM</span>
-                                                        </div>
-
-                                                        <div class="d-flex align-items-center">
-                                                            <div class="line-clamp me-auto">
-                                                                Hello! Yeah, I'm going to meet my friend.
-                                                            </div>
-
-                                                           
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <br><br>
-                                            </div>
-          </a>
-
-          
-
-        
+</div>        
                                             
 </div>
 <?php
