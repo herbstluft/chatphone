@@ -15,7 +15,7 @@
     <!--Boostrap--> 
 </head>
 
-<body style="background-color: white;">
+<body style="background-color: #f7f7f7;">
 
 
         <!--Barra de navegacion-->
@@ -57,7 +57,7 @@
         <!--Barra de navegacion-->
 
                 <!--Logo y login-->
-                <div class="container sombras" style=" background-color: white; border-radius: 15px; padding-bottom: 5%;">
+                <div class="container sombras" style=" background-color: #f7f7f7; border-radius: 15px; padding-bottom: 5%;">
                    
                     <div style=" padding: 3%; padding-top: 3%;">
                     <br><br><br>
@@ -86,7 +86,7 @@
                                     <div class="row">
                                         <div class="col-11 col-md-5">
                                             <div class="form-floating">
-                                                <input style="border-radius: 10px;" type="text" class="form-control input" id="floatingInput" name="nombre" required>
+                                                <input  style="width:100%; margin:auto; background-color:#ebf1f7; color: #848484; margin-bottom:1.5%;  border:0px; border-radius:10px; height:8%;" type="text" class="form-control input" id="floatingInput" name="nombre" required>
                                                 <label for="floatingInput">Nombre &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
                                                 </label> 
                                             </div>
@@ -94,7 +94,7 @@
                                     <br><br><br>
                                         <div class="col-11 col-md-5 offset-md-1 ">
                                             <div class="form-floating">
-                                                <input style="border-radius: 10px;" type="text" class="form-control input" id="floatingInput" name="apellido" required>
+                                                <input style="width:100%; margin:auto; background-color:#ebf1f7; color: #848484; margin-bottom:1.5%;  border:0px; border-radius:10px; height:8%;"  type="text" class="form-control input" id="floatingInput" name="apellido" required>
                                                 <label for="floatingInput">Apellidos &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
                                                 </label> 
                                             </div>
@@ -103,14 +103,14 @@
                                     </div>
                                 <br>
                                     <div class="form-floating" style="width: 91.5%;">
-                                        <input style="border-radius: 10px;" type="tel" class="form-control input" id="floatingInput" name="telefono" required maxlength="10" minlength="10">
+                                        <input style="width:100%; margin:auto; background-color:#ebf1f7; color: #848484; margin-bottom:1.5%;  border:0px; border-radius:10px; height:8%;"  type="tel" class="form-control input" id="floatingInput" name="telefono" required maxlength="10" minlength="10">
                                         <label for="floatingInput">Numero de telefono &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
                                             </label> 
                                     </div>
 
                                     <br>
                                     <div class="form-floating" style="width: 91.5%;">
-                                        <input style="border-radius: 10px;" type="email" class="form-control input" id="floatingInput" name="correo" required>
+                                        <input style="width:100%; margin:auto; background-color:#ebf1f7; color: #848484; margin-bottom:1.5%;  border:0px; border-radius:10px; height:8%;"  type="email" class="form-control input" id="floatingInput" name="correo" required>
                                         <label for="floatingInput">Correo electrónico &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
                                             </label> 
                                     </div>
@@ -118,14 +118,14 @@
                                 <br>
 
                                 <div class="form-floating" style="width: 91.5%;">
-                                    <input style="border-radius: 10px" type="password" class="form-control input" id="floatingInput" name="contrasena1" required minlength="8"  maxlength="20">
+                                    <input style="width:100%; margin:auto; background-color:#ebf1f7; color: #848484; margin-bottom:1.5%;  border:0px; border-radius:10px; height:8%;"  type="password" class="form-control input" id="floatingInput" name="contrasena1" required minlength="8"  maxlength="20">
                                     <label for="floatingInput">Contraseña &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</label> 
                                 </div>
 
                                 <br>
 
                                 <div class="form-floating" style="width: 91.5%;">
-                                    <input style="border-radius: 10px" type="password" class="form-control input" id="floatingInput" name="contrasena2" required  minlength="8"  maxlength="20">
+                                    <input style="width:100%; margin:auto; background-color:#ebf1f7; color: #848484; margin-bottom:1.5%;  border:0px; border-radius:10px; height:8%;"  type="password" class="form-control input" id="floatingInput" name="contrasena2" required  minlength="8"  maxlength="20">
                                     <label for="floatingInput">Confirmar Contraseña &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</label> 
                                 </div>
                                 <br>

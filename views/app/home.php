@@ -1764,12 +1764,13 @@ if(isset(($_GET['grupoid'])))
                 </div>
             </div>
         </div>
-
+ 
         <div class="message-footer">
             <span class="extra-small text-muted">08:45 PM</span>
         </div>
     </div>
 </div>
+
 
  <br><br><br>
 <div style="background-color:rgba(255, 255, 255, 0.87); backdrop-filter: blur(35px); padding:1%; width:59%; height:65px; position:fixed; margin-left:-0.8%; top: 91.1%; ">
@@ -1781,7 +1782,6 @@ if(isset(($_GET['grupoid'])))
 <?php
 }
 ?>
-
 
 
 

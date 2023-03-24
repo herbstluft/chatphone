@@ -1,7 +1,7 @@
 
 
 <!DOCTYPE html>
-<html lang="en" style="background-color: white;">
+<html lang="en" style="background-color:  #f7f7f7;">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../css/estilos.css">
     <!--Boostrap--> 
 </head>
-<body style="background-color: white;">
+<body style="background-color: #f7f7f7;">
 
 
         <!--Barra de navegacion-->
@@ -122,14 +122,11 @@ if($_POST){
                         <div style="width: 350px; margin: auto;">
                             <form action="" method="post">
                                 <div class="form-floating">
-                                    <input style="border-radius: 10px 10px 0px 0px;" type="tel" class="form-control input" id="floatingInput"  required maxlength="10" minlength="10" name="phone">
-                                    <label for="floatingInput">Numero de telefono &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
-                                        </label> 
+                                <input type="tel" style="width:100%; margin:auto; background-color:#ebf1f7; margin-bottom:2.5%; border:0px; border-radius:10px; height:8%; padding:4%; padding-left:5%; color: #848484; outline:none" placeholder="Numero de telefono"  required name="phone" maxlength="10" minlength="10" >
                                 </div>
 
                                 <div class="form-floating">
-                                    <input style="border-radius: 0px 0px 10px 10px;" type="password" class="form-control input" id="floatingInput" required name="password">
-                                    <label for="floatingInput">Contraseña &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</label> 
+                                 <input type="password" style="width:100%; margin:auto; background-color:#ebf1f7; margin-bottom:2.5%; border:0px; border-radius:10px; height:8%; padding:4%; padding-left:5%; color: #848484; outline:none" placeholder="Contraseña"  required name="password">
                                 </div>
 
                                 
