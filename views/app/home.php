@@ -165,6 +165,44 @@ if(isset($_SESSION['user'])){
 -webkit-box-shadow: 0px -1px 8px -2px rgba(0,0,0,0.04);
 -moz-box-shadow: 0px -1px 8px -2px rgba(0,0,0,0.04);
 }
+
+
+.nav-pills {
+    background: #ebf1f7;
+    border-radius: .6rem;
+    padding: .3125rem;
+}
+
+.nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+ol, ul {
+    padding-left: 2rem;
+}
+
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
 </style>
 
 <body>
@@ -175,7 +213,7 @@ if(isset($_SESSION['user'])){
 <!--Barra herramientas-->
 <div class="col-lg-1 text-center" style="background-color:white; overflow-x:hidden; overflow-y:scroll;  height:49rem">
      <!--Logo--> 
-    <a href="/" class="d-block p-3 link-dark text-decoration-none" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Icon-only" style="margin-top:10%">
+    <a href="home.php?inicio" class="d-block p-3 link-dark text-decoration-none" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Icon-only" style="margin-top:10%">
     <svg version="1.1" width="50px" height="50px" fill="#2787f5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 46 46" enable-background="new 0 0 46 46" xml:space="preserve">
                         <polygon opacity="0.7" points="45,11 36,11 35.5,1 "></polygon>
                         <polygon points="35.5,1 25.4,14.1 39,21 "></polygon>
@@ -188,7 +226,7 @@ if(isset($_SESSION['user'])){
       <span class="visually-hidden">Icon-only</span>
     </a>
     <br><br><br><br><br>
-    <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+    <ul class="nav nav-pills nav-flush flex-column mb-auto text-center" style="background-color: white;">
       <li class="nav-item">
          <!--Nuevo grupo--> 
         <a href="?ng" class="a nav-link  py-3 rounded-0" aria-current="page" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Home" data-bs-original-title="Home">
@@ -923,7 +961,7 @@ if(isset($_GET['inicio']) || isset($_GET['grupos'])  || isset($_GET['archivados'
         <path d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"/>
         </svg>
         <br><br>
-        <p class="text-center" style="color:#9faacc">Elige una persona del menú de la izquierda y comienza tu conversación.</p>
+        <p class="text-center" style="color:#9faacc">Elige una persona o un grupo del menú de la izquierda y comienza tu conversación.</p>
     </div>
 
 </div>
@@ -1529,10 +1567,8 @@ if(isset(($_GET['grupoid'])))
                                                             <div class="dropdown-center">
                                                                
                                                                 <ul style="background-color:#ffffff; backdrop-filter: blur(35px); border: 0.5px; margin: 60%;" class="sombras dropdown-menu">
-                                                                  <li><a class="dropdown-item" style="margin-top: 5%;" href="#">Info. del contacto</a></li>
-                                                                  <li><a class="dropdown-item" style="margin-top: 5%;" href="#">Vaciar mensajes</a></li>
-                                                                  <li><a class="dropdown-item" style="margin-top: 5%; color: red;" href="#">Eliminar chat</a></li>
-                                                                </ul>
+                                                                <li><a class="dropdown-item" style="margin-top: 5%;" href="#">Añadir miembro</a></li>
+                                                                  <lia class="dropdown-item" style="margin-top: 5%;" data-bs-toggle="modal" data-bs-target="#info_group">Info. del grupo</li>                                                                </ul>
                                                               </div>
                                                         </div>
 
@@ -1543,6 +1579,7 @@ if(isset(($_GET['grupoid'])))
                                                 </div>
                                                 <br><br>
     </div>
+    
   </div>
 
 <br><br><br><br><br>
@@ -1784,6 +1821,130 @@ if(isset(($_GET['grupoid'])))
 ?>
 
 
+
+
+
+<!-- Modals -->
+
+<!-- Modal informacion sobre grupp -->
+<div class="modal fade" id="info_group" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" style="background-color: transparent;">
+    <div class="modal-content" style="background-color:  rgba(255, 255, 255, 0.886); backdrop-filter:blur(20px)">
+      <div class="modal-body">
+        <br>
+            <center>
+            <div class="avatar">
+                <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" style="height: 75px;width: 75px;border-radius:50%;border: 5px solid  rgba(233, 233, 233, 0.886) ;position: relative;display: -webkit-box;display: -ms-flexbox;display: flex;">
+             </div>
+             </center>
+                                              
+                                                <div class="col text-center" style="margin-top: 3%;">
+                                                <h5 class="me-auto mb-0" style="font-size: .9995rem;">Grupo1</h5>
+                                                    <p style="margin-top: 1.5%;font-size:15px; color:#95aac9">Descripcion del grupo1.</p>
+                                                </div> 
+
+                     <!--Tabs --->
+                                              
+                                                <ul class="ul nav nav-pills nav-justified" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="pill" href="#miembros" role="tab" aria-controls="offcanvas-group-tab-members" aria-selected="true">
+                                Miembros
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="pill" href="#documentos" role="tab" aria-controls="offcanvas-group-tab-files" aria-selected="false">
+                                Documentos
+                            </a>
+                        </li>
+                    </ul>
+                    <!--Tabs --->
+                    <br>
+
+                    
+                     <!--offcanvas miembros --->
+                    <div class="tab-pane fade active show" id="miembros" role="tabpanel">
+                    <div class="card-body" style="background-color: rgba(245, 245, 245, 0.896); padding-top: 3%; padding-bottom:3%; height: 17%; border-radius: 15px; margin-bottom: 4%;">
+                                                <div class="row gx-5">
+                                                    <div class="col-auto">
+                                                        <div class="avatar avatar-online">
+                                                            <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" class="img-profile">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col" style="margin-left: -7%;">
+                                                        <div class="d-flex align-items-center mb-3">
+                                                            <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
+                                                        </div>
+
+                                                        <div class="d-flex align-items-center" style="margin-top: -3%;">
+                                                            <div class="line-clamp me-auto">
+                                                                Hello! Yeah, I'm going 
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>          
+                                            <div class="card-body" style="background-color: rgba(245, 245, 245, 0.896); padding-top: 3%; padding-bottom:3%; height: 17%; border-radius: 15px; margin-bottom: 4%;">
+                                                <div class="row gx-5">
+                                                    <div class="col-auto">
+                                                        <div class="avatar avatar-online">
+                                                            <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" class="img-profile">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col" style="margin-left: -7%;">
+                                                        <div class="d-flex align-items-center mb-3">
+                                                            <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
+                                                        </div>
+
+                                                        <div class="d-flex align-items-center" style="margin-top: -3%;">
+                                                            <div class="line-clamp me-auto">
+                                                                Hello! Yeah, I'm going 
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>          
+                                            <div class="card-body" style="background-color: rgba(245, 245, 245, 0.896); padding-top: 3%; padding-bottom:3%; height: 17%; border-radius: 15px; margin-bottom: 4%;">
+                                                <div class="row gx-5">
+                                                    <div class="col-auto">
+                                                        <div class="avatar avatar-online">
+                                                            <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" class="img-profile">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col" style="margin-left: -7%;">
+                                                        <div class="d-flex align-items-center mb-3">
+                                                            <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
+                                                        </div>
+
+                                                        <div class="d-flex align-items-center" style="margin-top: -3%;">
+                                                            <div class="line-clamp me-auto">
+                                                                Hello! Yeah, I'm going 
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>                         
+                        </div>
+                        <!--offcanvas miembros --->
+
+
+                                        
+
+                        
+                                            
+
+      </div>
+        <button style="margin:4%; padding-top:2%; padding-bottom:2%; border-radius:10px" type="button" class="btn btn-primary" data-bs-dismiss="modal">Cancelar</button>
+    </div>
+  </div>
+</div>
+<!-- Modals -->
 
 </body>
 </html>
