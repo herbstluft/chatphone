@@ -18,6 +18,7 @@ if(isset($_SESSION['user'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../img/logo .png">
     <title>Document</title>
        <!--Boostrap-->   
        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -207,8 +208,17 @@ ul {
 
 <body>
 
-<div class="row">
 
+
+<div class="mobile d-block d-md-block d-lg-none">
+    <h3>sssssssss</h3>
+</div>
+
+
+
+
+<div class="desktop d-none d-md-none d-lg-block">
+<div class="row">
 
 <!--Barra herramientas-->
 <div class="col-lg-1 text-center" style="background-color:white; overflow-x:hidden; overflow-y:scroll;  height:49rem">
@@ -1001,7 +1011,7 @@ if(isset(($_GET['id'])))
                                                             <div class="dropdown-center">
                                                                
                                                                 <ul style="background-color:#ffffff; backdrop-filter: blur(35px); border: 0.5px; margin: 60%;" class="sombras dropdown-menu">
-                                                                  <li><a class="dropdown-item" style="margin-top: 5%;" href="#">Info. del contacto</a></li>
+                                                                  <li class="dropdown-item" style="margin-top: 5%;" data-bs-toggle="modal" data-bs-target="#info_chat">Info. del contacto</a></li>
                                                                   <li><a class="dropdown-item" style="margin-top: 5%;" href="#">Vaciar mensajes</a></li>
                                                                   <li><a class="dropdown-item" style="margin-top: 5%; color: red;" href="#">Eliminar chat</a></li>
                                                                 </ul>
@@ -1283,7 +1293,7 @@ if(isset(($_GET['archivadoid'])))
                                                             <div class="dropdown-center">
                                                                
                                                                 <ul style="background-color:#ffffff; backdrop-filter: blur(35px); border: 0.5px; margin: 60%;" class="sombras dropdown-menu">
-                                                                  <li><a class="dropdown-item" style="margin-top: 5%;" href="#">Info. del contacto</a></li>
+                                                                  <li class="dropdown-item" style="margin-top: 5%;" data-bs-toggle="modal" data-bs-target="#info_chat">Info. del contacto</a></li>
                                                                   <li><a class="dropdown-item" style="margin-top: 5%;" href="#">Vaciar mensajes</a></li>
                                                                   <li><a class="dropdown-item" style="margin-top: 5%; color: red;" href="#">Eliminar chat</a></li>
                                                                 </ul>
@@ -1566,9 +1576,12 @@ if(isset(($_GET['grupoid'])))
                                                             </div>
                                                             <div class="dropdown-center">
                                                                
-                                                                <ul style="background-color:#ffffff; backdrop-filter: blur(35px); border: 0.5px; margin: 60%;" class="sombras dropdown-menu">
-                                                                <li><a class="dropdown-item" style="margin-top: 5%;" href="#">Añadir miembro</a></li>
-                                                                  <lia class="dropdown-item" style="margin-top: 5%;" data-bs-toggle="modal" data-bs-target="#info_group">Info. del grupo</li>                                                                </ul>
+                                                                <ul style="background-color:#ffffff; backdrop-filter: blur(35px); border: 0.5px; margin: 60%;" class="sombras dropdown-menu">                                                             
+                                                                <li class="dropdown-item" style="margin-top: 5%;" data-bs-toggle="modal" data-bs-target="#info_group">Info. del grupo</li>
+                                                                <li class="dropdown-item" style="margin-top: 5%;" data-bs-toggle="modal" data-bs-target="#edit_description">Editar Descripcion</li>  
+                                                                <li class="dropdown-item" style="margin-top: 5%;" data-bs-toggle="modal" data-bs-target="#add_members" >Añadir miembros</li>
+                                                                <li><a class="dropdown-item" style="margin-top: 5%; color:red" href="#">Salir del grupo</a></li>
+                                                                </ul>
                                                               </div>
                                                         </div>
 
@@ -1820,18 +1833,151 @@ if(isset(($_GET['grupoid'])))
 }
 ?>
 
+</div>
+
 
 
 
 
 <!-- Modals -->
 
-<!-- Modal informacion sobre grupp -->
-<div class="modal fade" id="info_group" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" style="background-color: transparent;">
+<!-- Modal añadir miembros a un grupo -->
+
+<div class="modal fade" id="add_members" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" style="background-color: transparent;">
     <div class="modal-content" style="background-color:  rgba(255, 255, 255, 0.886); backdrop-filter:blur(20px)">
       <div class="modal-body">
         <br>
+        <div style="margin-left: 5%;"  data-bs-dismiss="modal">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2787f5" class="bi bi-chevron-left" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+        </svg>
+        </div>
+        
+                                                <div class="col text-center" style="margin-top: -5%;">
+                                                <h5 class="me-auto mb-0" style="font-size: .9995rem;">Miembros</h5>
+                                                    <p style="margin-top: 1.5%;font-size:15px; color:#95aac9">Agrega nuevos miembros</p>
+                                                </div> 
+                                                
+                                            <input type="text" style="width:100%; background-color:#ebf1f7; border:0px; border-radius:10px; height:8%; padding:5%; padding-left:15%; color: #848484; outline:none" placeholder="Busca chats o usuarios">
+                                            <img src="https://img.icons8.com/ios/23/a2b5cf/search--v1.png" style="position:relative; bottom:37px; left:5%">
+
+                    
+                     <!--offcanvas miembros --->
+
+                    <div class="card-body" style="padding-top: 3%; padding-bottom:3%; height: 17%; border-radius: 15px; margin-bottom: 4%;">
+                                                <div class="row gx-5">
+                                                    <div class="col-auto">
+                                                        <div class="avatar avatar-online">
+                                                            <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" class="img-profile">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col" style="margin-left: -7%;">
+                                                        <div class="d-flex align-items-center mb-3">
+                                                            <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
+                                                        </div>
+
+                                                        <div class="d-flex align-items-center" style="margin-top: -3%;">
+                                                            <div class="line-clamp me-auto">
+                                                                Hello! Yeah, I'm going 
+                                                            </div>
+                                                            
+                                                            <div class="form-check">
+                                                                <input style="border:none;" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                            </div>
+
+                                                        </div>
+                                                        <hr style="width:100%; margin:auto; color:#95aac9; opacity:0.2; position:relative; top:20px">
+                                                    </div>
+                                                </div>
+                                              
+                                            </div>   
+                                                   
+                                            <div class="card-body" style="padding-top: 3%; padding-bottom:3%; height: 17%; border-radius: 15px; margin-bottom: 4%;">
+                                                <div class="row gx-5">
+                                                    <div class="col-auto">
+                                                        <div class="avatar avatar-online">
+                                                            <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" class="img-profile">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col" style="margin-left: -7%;">
+                                                        <div class="d-flex align-items-center mb-3">
+                                                            <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
+                                                        </div>
+
+                                                        <div class="d-flex align-items-center" style="margin-top: -3%;">
+                                                            <div class="line-clamp me-auto">
+                                                                Hello! Yeah, I'm going 
+                                                            </div>
+                                                            
+                                                            <div class="form-check">
+                                                                <input style="border:none;" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                            </div>
+
+                                                        </div>
+                                                        <hr style="width:100%; margin:auto; color:#95aac9; opacity:0.2; position:relative; top:20px">
+                                                    </div>
+                                                </div>
+                                            </div>          
+
+
+                                            <div class="card-body" style=" padding-top: 3%; padding-bottom:3%; height: 17%; border-radius: 15px; margin-bottom: 4%;">
+                                                <div class="row gx-5">
+                                                    <div class="col-auto">
+                                                        <div class="avatar avatar-online">
+                                                            <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" class="img-profile">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col" style="margin-left: -7%;">
+                                                        <div class="d-flex align-items-center mb-3">
+                                                            <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
+                                                        </div>
+
+                                                        <div class="d-flex align-items-center" style="margin-top: -3%;">
+                                                            <div class="line-clamp me-auto">
+                                                                Hello! Yeah, I'm going 
+                                                            </div>
+
+                                                            <div class="form-check">
+                                                                <input style="border:none;" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                            </div>
+
+                                                        </div>
+                                                        <hr style="width:100%; margin:auto; color:#95aac9; opacity:0.2; position:relative; top:20px">
+                                                    </div>
+                                                </div>
+                                            </div>                         
+                      
+                        <!--offcanvas miembros --->              
+      </div>
+      <center>
+      <form action="" method="post">
+                <a href="">
+                <button style="margin:2; margin-bottom:5%; margin-top:-3%; width:50%; padding-top:2%; padding-bottom:2%; border-radius:10px;" type="button" class="btn btn-primary" >Añadir miembros</button>
+                </a>
+            </form>   
+            </center>
+    </div>
+  </div>
+</div>
+
+<!-- Modal añadir miembros a un grupo -->
+
+
+<!-- Modal informacion sobre grupo -->
+<div class="modal fade" id="info_group" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" style="background-color: transparent;">
+    <div class="modal-content" style="background-color:  rgba(255, 255, 255, 0.886); backdrop-filter:blur(20px)">
+      <div class="modal-body">
+        <br>
+        <div style="margin-left: 5%;"  data-bs-dismiss="modal">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2787f5" class="bi bi-chevron-left" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+        </svg>
+        </div>
             <center>
             <div class="avatar">
                 <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" style="height: 75px;width: 75px;border-radius:50%;border: 5px solid  rgba(233, 233, 233, 0.886) ;position: relative;display: -webkit-box;display: -ms-flexbox;display: flex;">
@@ -1931,19 +2077,187 @@ if(isset(($_GET['grupoid'])))
                                                 </div>
                                             </div>                         
                         </div>
-                        <!--offcanvas miembros --->
-
-
-                                        
-
-                        
-                                            
-
+                        <!--offcanvas miembros --->              
       </div>
-        <button style="margin:4%; padding-top:2%; padding-bottom:2%; border-radius:10px" type="button" class="btn btn-primary" data-bs-dismiss="modal">Cancelar</button>
     </div>
   </div>
 </div>
+<!-- Modal informacion sobre grupo -->
+
+
+<!-- Modal Editar descripcion de  un grupo -->
+<div class="modal fade" id="edit_description" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" style="background-color: transparent;">
+    <div class="modal-content" style="background-color:  rgba(255, 255, 255, 0.886); backdrop-filter:blur(20px); padding-right:2.5%">
+      <div class="modal-body">
+        <br>
+        <div style="margin-left: 5%;"  data-bs-dismiss="modal">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2787f5" class="bi bi-chevron-left" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+        </svg>
+        </div>
+            <center>
+            <div class="avatar">
+                <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" style="height: 75px;width: 75px;border-radius:50%;border: 5px solid  rgba(233, 233, 233, 0.886) ;position: relative;display: -webkit-box;display: -ms-flexbox;display: flex;">
+             </div>
+             </center>
+                                              
+                                                <div class="col text-center" style="margin-top: 3%;">
+                                                <h5 class="me-auto mb-0" style="font-size: .9995rem;">Edita la descripcion del grupo</h5>
+                                                </div> 
+                                                <br>
+                                                <input type="text" style="width:100%; margin:auto; background-color:#ebf1f7; margin-bottom:2.5%; border:0px; border-radius:10px; height:8%; padding:4%; padding-left:5%; color: #848484; outline:none" value="Esta es la descripcion del grupo 1"  required name="gdescripcion">
+                    
+
+      </div>
+     
+      <div class="row text-center" style="margin-bottom:2%">
+      
+            <form action="" method="post">
+                <a href="">
+                <button style="margin:2%; margin-top:-3%; width:50%; padding-top:2%; padding-bottom:2%; border-radius:10px;" type="button" class="btn btn-primary" >Guardar</button>
+                </a>
+            </form>   
+      </div>
+     
+
+    </div>
+  </div>
+</div>
+<!-- Modal Editar descripcion de  un grupo -->
+
+
+<!-- Modal informacion sobre un chat -->
+<div class="modal fade" id="info_chat" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" style="background-color: transparent;">
+    <div class="modal-content" style="background-color:  rgba(255, 255, 255, 0.886); backdrop-filter:blur(20px)">
+      <div class="modal-body">
+        <br>
+
+        <div style="margin-left: 5%;"  data-bs-dismiss="modal">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2787f5" class="bi bi-chevron-left" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+        </svg>
+        </div>
+
+            <center>
+            <div class="avatar">
+                <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" style="height: 75px;width: 75px;border-radius:50%;border: 5px solid  rgba(233, 233, 233, 0.886) ;position: relative;display: -webkit-box;display: -ms-flexbox;display: flex;">
+             </div>
+             </center>                    
+                                                <div class="col text-center" style="margin-top: 3%;">
+                                                <h5 class="me-auto mb-0" style="font-size: .9995rem;">Juan angel</h5>
+                                                    <p style="margin-top: 1.5%;font-size:15px; color:#95aac9">Hola estoy usando ChatPhone</p>
+                                                </div> 
+
+                     <!--Tabs --->
+                                              
+                                                <ul class="ul nav nav-pills nav-justified" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="pill" href="#miembros" role="tab" aria-controls="offcanvas-group-tab-members" aria-selected="true">
+                                Perfil
+                            </a>
+                        </li>
+
+                    </ul>
+                    <!--Tabs --->
+                    <br>
+
+                    
+                     <!--offcanvas miembros --->
+                    <div class="tab-pane fade active show" id="miembros" role="tabpanel">
+                    <div class="card-body" style="background-color: rgba(245, 245, 245, 0.896); padding-top: 3%; padding-bottom:3%; height: 17%; border-radius: 15px; margin-bottom: 4%;">
+                                                <div class="row gx-5">
+                                
+
+                                                    <div class="col" style="margin-left: 0%;">
+                                                        <div class="d-flex align-items-center mb-3">
+                                                            <h5 class="me-auto mb-0" style="font-size: .9375rem;">Telefono</h5>
+                                                            
+                                                            <div style="background-color: #ebf1f7; padding:1%; padding-left:3%; border-radius:8px; padding-right:3%; position:relative; top:15px; right:2%">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#9faacc" class="bi bi-telephone-outbound" viewBox="0 0 16 16">
+                                                                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zM11 .5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V1.707l-4.146 4.147a.5.5 0 0 1-.708-.708L14.293 1H11.5a.5.5 0 0 1-.5-.5z"/>
+                                                                </svg>
+                                                            </div>
+
+                                                        </div>
+
+                                                        <div class="d-flex align-items-center" style="margin-top: -3%;">
+                                                            <div class="line-clamp me-auto">
+                                                                8714428495 
+                                                            </div>
+                                                        </div>
+
+                                                        
+
+                                                    </div>
+                                                </div>
+                         </div>          
+
+                         <div class="card-body" style="background-color: rgba(245, 245, 245, 0.896); padding-top: 3%; padding-bottom:3%; height: 17%; border-radius: 15px; margin-bottom: 4%;">
+                                                <div class="row gx-5">
+                                
+
+                                                    <div class="col" style="margin-left: 0%;">
+                                                        <div class="d-flex align-items-center mb-3">
+                                                            <h5 class="me-auto mb-0" style="font-size: .9375rem;">Correo electrónico</h5>
+                                                            
+                                                            <div style="background-color: #ebf1f7; padding:1%; padding-left:3%; border-radius:8px; padding-right:3%; position:relative; top:15px; right:2%">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#9faacc" class="bi bi-envelope" viewBox="0 0 16 16">
+                                                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                                                                </svg>
+                                                            </div>
+
+                                                        </div>
+
+                                                        <div class="d-flex align-items-center" style="margin-top: -3%;">
+                                                            <div class="line-clamp me-auto">
+                                                                herbstluftwm.28@gmail.com 
+                                                            </div>
+                                                        </div>
+
+                                                        
+
+                                                    </div>
+                                                </div>
+                         </div>     
+
+                         <div class="card-body" style="background-color: rgba(245, 245, 245, 0.896); padding-top: 3%; padding-bottom:3%; height: 17%; border-radius: 15px; margin-bottom: 4%;">
+                                                <div class="row gx-5">
+                                
+
+                                                    <div class="col" style="margin-left: 0%;">
+                                                        <div class="d-flex align-items-center mb-3">
+                                                            <h5 class="me-auto mb-0" style="font-size: .9375rem;">Info. de estado</h5>
+                                                            
+                                                            <div style="background-color: #ebf1f7; padding:1%; padding-left:3%; border-radius:8px; padding-right:3%; position:relative; top:15px; right:2%">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#9faacc" class="bi bi-card-text" viewBox="0 0 16 16">
+                                                                    <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+                                                                    <path d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 8zm0 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z"/>
+                                                                </svg>
+                                                            </div>
+
+                                                        </div>
+
+                                                        <div class="d-flex align-items-center" style="margin-top: -3%;">
+                                                            <div class="line-clamp me-auto">
+                                                                Hola estoy usando ChatPhone 
+                                                            </div>
+                                                        </div>
+
+                                                        
+
+                                                    </div>
+                                                </div>
+                         </div>     
+                                           
+                        <!--offcanvas miembros --->              
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal informacion sobre grupo -->
+
 <!-- Modals -->
 
 </body>

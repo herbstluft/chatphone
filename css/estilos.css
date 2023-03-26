@@ -2,7 +2,7 @@ html{
     background-color: #f7f7f7;
 }
 body{
-    background-color: #f7f7f7;
+    background-color: #ffffff;
 }
 .barra{
     width: 100%;
@@ -45,6 +45,7 @@ body{
 }
 a{
   text-decoration: none;
+  background-color:rgba(158, 158, 158, 0.896)
 }
 
 
