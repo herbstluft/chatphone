@@ -893,9 +893,10 @@ if(isset($_GET['personas']))
   <input type="text"  style="width:100%; background-color:#ebf1f7; border:0px; border-radius:10px; height:8%; padding:5%; padding-left:15%; color: #848484; outline:none" placeholder="Buscar usuarios o amigos">
   
   <br><br><br>
-          <a href="?persona=1" style="text-decoration: none; color:black">
-                                            <div class="card-body" style="background-color: white; padding-top: 5%;  height: 17%; border-radius: 15px; margin-bottom: 4%;">
-                                                <div class="row gx-5">
+          
+  <a href="?persona=1" style="text-decoration: none; color:black">
+          <div class="card-body">
+                                                <div class="row gx-5"  style="background-color: white; padding-top: 5%; padding-bottom:5%; height: 17%; border-radius: 15px; margin-bottom: -8%;" >
                                                     <div class="col-auto">
                                                         <div class="avatar avatar-online">
                                                             <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" class="img-profile">
@@ -905,11 +906,20 @@ if(isset($_GET['personas']))
                                                     <div class="col" style="margin-left: -7%;">
                                                         <div class="d-flex align-items-center mb-3">
                                                             <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
+                                                            
+                                                            
+                                                            <div style="background-color: #ebf1f7; position:relative; left:-5%; top:20px; padding:3%; border-radius:8px">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#9faacc" class="bi bi-chat-left-text" viewBox="0 0 16 16">
+                                                                <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                                                <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+                                                                </svg>
+                                                                </div>
+                                                                
                                                         </div>
 
-                                                        <div class="d-flex align-items-center">
-                                                            <div class="line-clamp me-auto">
-                                                                Hello! Yeah, I'm going 
+                                                        <div class="d-flex align-items-center text-truncate" style="width:70%; position:relative; top:-10px">
+                                                            <div class="line-clamp me-auto text-truncate">
+                                                            disfruta la vida feliz
                                                             </div>
 
                                                         </div>
@@ -919,10 +929,10 @@ if(isset($_GET['personas']))
                                             </div>
           </a>
 
-
+          
           <a href="?persona=2" style="text-decoration: none; color:black">
-                                            <div class="card-body" style="background-color: white; padding-top: 5%;  height: 17%; border-radius: 15px; margin-bottom: 4%;">
-                                                <div class="row gx-5">
+          <div class="card-body">
+                                                <div class="row gx-5"  style="background-color: white; padding-top: 5%; padding-bottom:5%; height: 17%; border-radius: 15px; margin-bottom: -8%;" >
                                                     <div class="col-auto">
                                                         <div class="avatar avatar-online">
                                                             <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" class="img-profile">
@@ -932,14 +942,57 @@ if(isset($_GET['personas']))
                                                     <div class="col" style="margin-left: -7%;">
                                                         <div class="d-flex align-items-center mb-3">
                                                             <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
+                                                            
+                                                            
+                                                            <div style="background-color: #ebf1f7; position:relative; left:-5%; top:20px; padding:3%; border-radius:8px">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#9faacc" class="bi bi-chat-left-text" viewBox="0 0 16 16">
+                                                                <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                                                <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+                                                                </svg>
+                                                                </div>
+                                                                
                                                         </div>
 
-                                                        <div class="d-flex align-items-center">
-                                                            <div class="line-clamp me-auto">
-                                                                Hello! Yeah, I'm going to meet my friend.
+                                                        <div class="d-flex align-items-center text-truncate" style="width:70%; position:relative; top:-10px">
+                                                            <div class="line-clamp me-auto text-truncate">
+                                                            disfruta la vida feliz
                                                             </div>
 
-                                                           
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br><br>
+                                            </div>
+          </a>
+
+          <a href="?persona=3" style="text-decoration: none; color:black">
+          <div class="card-body">
+                                                <div class="row gx-5"  style="background-color: white; padding-top: 5%; padding-bottom:5%; height: 17%; border-radius: 15px; margin-bottom: -8%;" >
+                                                    <div class="col-auto">
+                                                        <div class="avatar avatar-online">
+                                                            <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" class="img-profile">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col" style="margin-left: -7%;">
+                                                        <div class="d-flex align-items-center mb-3">
+                                                            <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
+                                                            
+                                                            
+                                                            <div style="background-color: #ebf1f7; position:relative; left:-5%; top:20px; padding:3%; border-radius:8px">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#9faacc" class="bi bi-chat-left-text" viewBox="0 0 16 16">
+                                                                <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                                                <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+                                                                </svg>
+                                                                </div>
+                                                                
+                                                        </div>
+
+                                                        <div class="d-flex align-items-center text-truncate" style="width:70%; position:relative; top:-10px">
+                                                            <div class="line-clamp me-auto text-truncate">
+                                                            disfruta la vida feliz
+                                                            </div>
+
                                                         </div>
                                                     </div>
                                                 </div>
