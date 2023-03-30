@@ -29,6 +29,9 @@ if(isset($_SESSION['user'])){
 </head>
 
 <style>
+     input[type="file"] {
+        display: none;
+      }
   .row{
     margin: 0;
   }
@@ -1131,18 +1134,110 @@ if(isset($_GET['ng']) || isset($_GET['grupos'])  || isset($_GET['archivados'])  
 
 <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
   <li class="nav-item col-6" role="presentation">
-    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+    <button class="nav-link active" style="width:98%; margin: auto; opacity:0.9" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Detalles</button>
   </li>
-  <li class="nav-item" role="presentation">
-    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
+  <li class="nav-item col-6" role="presentation">
+    <button class="nav-link" style="width:98%; margin: auto" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Miembros</button>
   </li>
 </ul>
 
 <div class="tab-content" id="pills-tabContent">
-  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">...</div>
+    <!-- Contenido de Detalles-->
+  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+
+  <div style="margin-left: 0%; margin-right:0%; width:100%">
+
+
+
+
+                                            <div class="card border-0" style="border-radius:15px; background:red">
+                                                <div class="profile">
+                                                    <div class="profile-img text-primary rounded-top">
+                                                        <svg style="border-radius: 15px;" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 400 140.74"><defs><style>.cls-2{fill:#fff;opacity:0.1;}</style></defs><g><g><path d="M400,125A1278.49,1278.49,0,0,1,0,125V0H400Z"></path><path class="cls-2" d="M361.13,128c.07.83.15,1.65.27,2.46h0Q380.73,128,400,125V87l-1,0a38,38,0,0,0-38,38c0,.86,0,1.71.09,2.55C361.11,127.72,361.12,127.88,361.13,128Z"></path><path class="cls-2" d="M12.14,119.53c.07.79.15,1.57.26,2.34v0c.13.84.28,1.66.46,2.48l.07.3c.18.8.39,1.59.62,2.37h0q33.09,4.88,66.36,8,.58-1,1.09-2l.09-.18a36.35,36.35,0,0,0,1.81-4.24l.08-.24q.33-.94.6-1.9l.12-.41a36.26,36.26,0,0,0,.91-4.42c0-.19,0-.37.07-.56q.11-.86.18-1.73c0-.21,0-.42,0-.63,0-.75.08-1.51.08-2.28a36.5,36.5,0,0,0-73,0c0,.83,0,1.64.09,2.45C12.1,119.15,12.12,119.34,12.14,119.53Z"></path><circle class="cls-2" cx="94.5" cy="57.5" r="22.5"></circle><path class="cls-2" d="M276,0a43,43,0,0,0,43,43A43,43,0,0,0,362,0Z"></path></g></g></svg>
+                                                    
+<input for="imagen" type="file" id="imagen" name="imagen" accept="image/*" onchange="mostrarImagen(event)" class="input-imagen">
+    
+    <label for="imagen" class="label-imagen" style="position: relative; left:49%; top:-300px">
+        <div id="imagen-preview" class="imagen-preview">
+            <center>
+            <label for="imagen" class="label-imagen">
+                <svg style="position: relative; top:20px;" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#96abc9" class="bi bi-plus-square" viewBox="0 0 16 16">
+                    <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                </svg>
+            </label>
+            </center>
+        </div>
+    </label>
+    
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    
+                            
+
+<style>
+
+.input-imagen {
+  display: block;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+.imagen-preview {
+    margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+  width: 80px;
+  height: 80px;
+  border-radius:50%;
+
+}
+
+.imagen-preview img {
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+  width: 80px;
+  height: 80px;
+  border-radius:50%;
+}
+</style>
+
+<script>
+function mostrarImagen(event) {
+  const input = event.target;
+  const preview = document.getElementById('imagen-preview');
+
+  const reader = new FileReader();
+
+  reader.onload = function() {
+    const imagen = document.createElement('img');
+    imagen.src = reader.result;
+    preview.innerHTML = '';
+    preview.appendChild(imagen);
+  }
+
+  reader.readAsDataURL(input.files[0]);
+}
+</script>
+
+
+  </div>
+
+  </div>
+  <!-- Contenido de Detalles-->
+
+  <!-- Contenido de Miembros-->
   <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">...</div>
 
 </div>
+  <!-- Contenido de Miembros-->
+
 
 </div>
 
@@ -2726,6 +2821,8 @@ if(isset(($_GET['grupoid'])))
 <!-- Modal informacion sobre grupo -->
 
 <!-- Modals -->
+
+
 
 </body>
 </html>
