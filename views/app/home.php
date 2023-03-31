@@ -209,12 +209,359 @@ ul {
 }
 </style>
 
-<body>
+<body style="background-color: #f6f9fb;">
 
 
 
-<div class="mobile d-block d-md-block d-lg-none">
-    <h3>sssssssss</h3>
+<div class="mobile d-block d-md-block d-lg-none" >
+
+
+
+    <div style="margin:3%;">
+    <p style="font-size: 22px; font-weight: 600;">Chats</p>
+
+    <input type="text" style="width:100%; background-color:#ebf1f7; border:0px; border-radius:10px; height:8%; padding:4%; padding-left:5%; color: #848484; outline:none" placeholder="Busca chats o usuarios">
+   
+    
+    <!-- Lista de chats-->
+<br><br>
+
+<a href="?archivadoid=2" style="text-decoration: none; color:black">
+                                            <div class="card-body" style="background-color: white; padding-top: 5%;  height: 17%; border-radius: 15px; margin-bottom: 4%;">
+                                                <div class="row gx-5">
+                                                    <div class="col-auto">
+                                                        <div class="avatar avatar-online">
+                                                            <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" class="img-profile">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col" style="margin-left: -7%;">
+                                                        <div class="d-flex align-items-center mb-3">
+                                                            <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
+                                                            <span class="text-muted ms-2" style=" --bs-text-opacity: 1;color: #bfccdf!important;font-size: .665em;">12:45 PM</span>
+                                                        </div>
+
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="line-clamp me-auto">
+                                                                Hello! Yeah, I'm going to meet my friend.
+                                                            </div>
+
+                                                           
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br><br>
+                                            </div>
+          </a>
+
+          <a href="?archivadoid=2" style="text-decoration: none; color:black">
+                                            <div class="card-body" style="background-color: white; padding-top: 5%;  height: 17%; border-radius: 15px; margin-bottom: 4%;">
+                                                <div class="row gx-5">
+                                                    <div class="col-auto">
+                                                        <div class="avatar avatar-online">
+                                                            <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" class="img-profile">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col" style="margin-left: -7%;">
+                                                        <div class="d-flex align-items-center mb-3">
+                                                            <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
+                                                            <span class="text-muted ms-2" style=" --bs-text-opacity: 1;color: #bfccdf!important;font-size: .665em;">12:45 PM</span>
+                                                        </div>
+
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="line-clamp me-auto">
+                                                                Hello! Yeah, I'm going to meet my friend.
+                                                            </div>
+
+                                                           
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br><br>
+                                            </div>
+          </a>
+
+          <a href="?archivadoid=2" style="text-decoration: none; color:black">
+                                            <div class="card-body" style="background-color: white; padding-top: 5%;  height: 17%; border-radius: 15px; margin-bottom: 4%;">
+                                                <div class="row gx-5">
+                                                    <div class="col-auto">
+                                                        <div class="avatar avatar-online">
+                                                            <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" class="img-profile">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col" style="margin-left: -7%;">
+                                                        <div class="d-flex align-items-center mb-3">
+                                                            <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
+                                                            <span class="text-muted ms-2" style=" --bs-text-opacity: 1;color: #bfccdf!important;font-size: .665em;">12:45 PM</span>
+                                                        </div>
+
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="line-clamp me-auto">
+                                                                Hello! Yeah, I'm going to meet my friend.
+                                                            </div>
+
+                                                           
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br><br>
+                                            </div>
+          </a>
+
+          <a href="?archivadoid=2" style="text-decoration: none; color:black">
+                                            <div class="card-body" style="background-color: white; padding-top: 5%;  height: 17%; border-radius: 15px; margin-bottom: 4%;">
+                                                <div class="row gx-5">
+                                                    <div class="col-auto">
+                                                        <div class="avatar avatar-online">
+                                                            <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" class="img-profile">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col" style="margin-left: -7%;">
+                                                        <div class="d-flex align-items-center mb-3">
+                                                            <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
+                                                            <span class="text-muted ms-2" style=" --bs-text-opacity: 1;color: #bfccdf!important;font-size: .665em;">12:45 PM</span>
+                                                        </div>
+
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="line-clamp me-auto">
+                                                                Hello! Yeah, I'm going to meet my friend.
+                                                            </div>
+
+                                                           
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br><br>
+                                            </div>
+          </a>
+
+          <a href="?archivadoid=2" style="text-decoration: none; color:black">
+                                            <div class="card-body" style="background-color: white; padding-top: 5%;  height: 17%; border-radius: 15px; margin-bottom: 4%;">
+                                                <div class="row gx-5">
+                                                    <div class="col-auto">
+                                                        <div class="avatar avatar-online">
+                                                            <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" class="img-profile">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col" style="margin-left: -7%;">
+                                                        <div class="d-flex align-items-center mb-3">
+                                                            <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
+                                                            <span class="text-muted ms-2" style=" --bs-text-opacity: 1;color: #bfccdf!important;font-size: .665em;">12:45 PM</span>
+                                                        </div>
+
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="line-clamp me-auto">
+                                                                Hello! Yeah, I'm going to meet my friend.
+                                                            </div>
+
+                                                           
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br><br>
+                                            </div>
+          </a>
+
+          <a href="?archivadoid=2" style="text-decoration: none; color:black">
+                                            <div class="card-body" style="background-color: white; padding-top: 5%;  height: 17%; border-radius: 15px; margin-bottom: 4%;">
+                                                <div class="row gx-5">
+                                                    <div class="col-auto">
+                                                        <div class="avatar avatar-online">
+                                                            <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" class="img-profile">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col" style="margin-left: -7%;">
+                                                        <div class="d-flex align-items-center mb-3">
+                                                            <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
+                                                            <span class="text-muted ms-2" style=" --bs-text-opacity: 1;color: #bfccdf!important;font-size: .665em;">12:45 PM</span>
+                                                        </div>
+
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="line-clamp me-auto">
+                                                                Hello! Yeah, I'm going to meet my friend.
+                                                            </div>
+
+                                                           
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br><br>
+                                            </div>
+          </a>
+
+
+          <a href="?archivadoid=2" style="text-decoration: none; color:black">
+                                            <div class="card-body" style="background-color: white; padding-top: 5%;  height: 17%; border-radius: 15px; margin-bottom: 4%;">
+                                                <div class="row gx-5">
+                                                    <div class="col-auto">
+                                                        <div class="avatar avatar-online">
+                                                            <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" class="img-profile">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col" style="margin-left: -7%;">
+                                                        <div class="d-flex align-items-center mb-3">
+                                                            <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
+                                                            <span class="text-muted ms-2" style=" --bs-text-opacity: 1;color: #bfccdf!important;font-size: .665em;">12:45 PM</span>
+                                                        </div>
+
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="line-clamp me-auto">
+                                                                Hello! Yeah, I'm going to meet my friend.
+                                                            </div>
+
+                                                           
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br><br>
+                                            </div>
+          </a>
+
+          <a href="?archivadoid=2" style="text-decoration: none; color:black">
+                                            <div class="card-body" style="background-color: white; padding-top: 5%;  height: 17%; border-radius: 15px; margin-bottom: 4%;">
+                                                <div class="row gx-5">
+                                                    <div class="col-auto">
+                                                        <div class="avatar avatar-online">
+                                                            <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" class="img-profile">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col" style="margin-left: -7%;">
+                                                        <div class="d-flex align-items-center mb-3">
+                                                            <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
+                                                            <span class="text-muted ms-2" style=" --bs-text-opacity: 1;color: #bfccdf!important;font-size: .665em;">12:45 PM</span>
+                                                        </div>
+
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="line-clamp me-auto">
+                                                                Hello! Yeah, I'm going to meet my friend.
+                                                            </div>
+
+                                                           
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br><br>
+                                            </div>
+          </a>
+    <!-- Lista de chats-->
+
+    </div>
+
+
+    <!-- Barra de navegacion-->
+<nav class="navigation d-flex flex-column text-center navbar navbar-light hide-scrollbar" style="position: fixed; top:90%;width:100%; height:110px; margin-top:5%; padding-left:3%; padding-top:5%; padding-right:3%; background: gray">
+                <!-- Brand -->
+                <a href="index.html" title="Messenger" class="d-none d-xl-block mb-6">
+                    <svg version="1.1" width="46px" height="46px" fill="currentColor" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 46 46" enable-background="new 0 0 46 46" xml:space="preserve">
+                        <polygon opacity="0.7" points="45,11 36,11 35.5,1 "></polygon>
+                        <polygon points="35.5,1 25.4,14.1 39,21 "></polygon>
+                        <polygon opacity="0.4" points="17,9.8 39,21 17,26 "></polygon>
+                        <polygon opacity="0.7" points="2,12 17,26 17,9.8 "></polygon>
+                        <polygon opacity="0.7" points="17,26 39,21 28,36 "></polygon>
+                        <polygon points="28,36 4.5,44 17,26 "></polygon>
+                        <polygon points="17,26 1,26 10.8,20.1 "></polygon>
+                    </svg>
+
+                </a>
+
+                <!-- Nav items -->
+                <ul style="margin-top:-15%;" class="d-flex nav navbar-nav flex-row flex-xl-column flex-grow-1 justify-content-between justify-content-xl-center align-items-center w-100 py-4 py-lg-2 px-lg-3" role="tablist">
+                    <!-- Invisible item to center nav vertically -->
+                    <li class="nav-item d-none d-xl-block invisible flex-xl-grow-1">
+                        <a class="nav-link py-0 py-lg-8" href="#" title="">
+                            <div class="icon icon-xl">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                            </div>
+                        </a>
+                    </li>
+
+                    <!-- New chat -->
+                    <li class="nav-item">
+                        <a class="nav-link py-0 py-lg-8" id="tab-create-chat" href="#tab-content-create-chat" title="Create chat" data-bs-toggle="tab" role="tab">
+                            <div class="icon icon-xl">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-3"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+                            </div>
+                        </a>
+                    </li>
+
+                    <!-- Friends -->
+                    <li class="nav-item">
+                        <a class="nav-link py-0 py-lg-8" id="tab-friends" href="#tab-content-friends" title="Friends" data-bs-toggle="tab" role="tab">
+                            <div class="icon icon-xl">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                            </div>
+                        </a>
+                    </li>
+
+                    <!-- Chats -->
+                    <li class="nav-item">
+                        <a class="nav-link active py-0 py-lg-8" id="tab-chats" href="#tab-content-chats" title="Chats" data-bs-toggle="tab" role="tab">
+                            <div class="icon icon-xl icon-badged">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                                <div class="badge badge-circle bg-primary">
+                                    <span>4</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <!-- Notification -->
+                    <li class="nav-item">
+                        <a class="nav-link py-0 py-lg-8" id="tab-notifications" href="#tab-content-notifications" title="Notifications" data-bs-toggle="tab" role="tab">
+                            <div class="icon icon-xl">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+                            </div>
+                        </a>
+                    </li>
+
+                    <!-- Support -->
+                    <li class="nav-item d-none d-xl-block flex-xl-grow-1">
+                        <a class="nav-link py-0 py-lg-8" id="tab-support" href="#tab-content-support" title="Support" data-bs-toggle="tab" role="tab">
+                            <div class="icon icon-xl">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layout"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+                            </div>
+                        </a>
+                    </li>
+
+                    <!-- Switcher -->
+                    <li class="nav-item d-none d-xl-block">
+                        <a class="switcher-btn nav-link py-0 py-lg-8" href="#!" title="Themes">
+                            <div class="switcher-icon switcher-icon-dark icon icon-xl d-none" data-theme-mode="dark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                            </div>
+                            <div class="switcher-icon switcher-icon-light icon icon-xl" data-theme-mode="light">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                            </div>
+                        </a>
+                    </li>
+
+                    <!-- Settings -->
+                    <li class="nav-item">
+                        <a class="nav-link py-0 py-lg-8" id="tab-settings" href="#tab-content-settings" title="Settings" data-bs-toggle="tab" role="tab">
+                            <div class="icon icon-xl">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-settings"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                            </div>
+                        </a>
+                    </li>
+
+                    <!-- Profile -->
+                    <li class="nav-item d-none d-xl-block">
+                        <a href="#" class="nav-link p-0 mt-lg-2" data-bs-toggle="modal" data-bs-target="#modal-profile">
+                            <div class="avatar avatar-online mx-auto">
+                                <img class="avatar-img" src="assets/img/avatars/1.jpg" alt="">
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+<!-- Barra de navegacion-->
 </div>
 
 
@@ -242,12 +589,21 @@ ul {
     <ul class="nav nav-pills nav-flush flex-column mb-auto text-center" style="background-color: white;">
       <li class="nav-item">
          <!--Nuevo grupo--> 
+         <?php if(isset($_GET['ng'])){?>
         <a href="?ng" class="a nav-link  py-3 rounded-0" aria-current="page" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Home" data-bs-original-title="Home">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="#0d6efd" class="a bi bi-pencil-square " viewBox="0 0 16 16">
+            <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+            <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+          </svg>
+        </a>
+        <?php } else{ ?>
+            <a href="?ng" class="a nav-link  py-3 rounded-0" aria-current="page" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Home" data-bs-original-title="Home">
           <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="#96abc9" class="a bi bi-pencil-square " viewBox="0 0 16 16">
             <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
             <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
           </svg>
         </a>
+        <?php } ?>
       </li>
       <li>
         <br>
@@ -1120,14 +1476,15 @@ if(isset($_GET['inicio']) || isset($_GET['grupos'])  || isset($_GET['archivados'
 
 <!--Barra de crear grupo-->
 <?php 
-if(isset($_GET['ng']) || isset($_GET['grupos'])  || isset($_GET['archivados'])  || isset($_GET['personas']) )
+if(isset($_GET['ng']))
 {
 ?>
-<div class="col-lg-11" style="background-color:white; overflow-x:hidden; overflow-y:scroll;  height:49rem">
+<div class="col-lg-11" style="background-color:#f6f9fb; overflow-x:hidden; overflow-y:scroll;  height:49rem">
 
+<form action="" method="post">
 <p style="font-size: 24px; font-weight: 600; margin-left:3%; margin-top:2%">Crea un grupo</p>
-<img src="https://img.icons8.com/ios/23/a2b5cf/search--v1.png" style="position:relative; top:3.5%; left:6%">
-<input type="text" style="width:95%; background-color:#ebf1f7; border:0px; border-radius:10px; height:8%; padding:2%; padding-left:6.5%; margin-top:-1.5%; color: #848484; margin-left:3%; margin-right:20%; outline:none" placeholder="Buscar usuarios o amigos">
+<img src="https://img.icons8.com/ios/23/a2b5cf/search--v1.png" style="position:relative; bottom:-30.5px; left:6%">
+<input type="text" style="width:95%; background-color:#ebf1f7; border:0px; border-radius:10px; height:8%; padding:2%; padding-left:7.5%; margin-top:-1.5%; color: #848484; margin-left:3%; margin-right:20%; outline:none" placeholder="Buscar usuarios o amigos">
 <br><br>
 
 <div style="margin-left:3%;margin-right:2%">
@@ -1149,30 +1506,33 @@ if(isset($_GET['ng']) || isset($_GET['grupos'])  || isset($_GET['archivados'])  
 
 
 
-
-                                            <div class="card border-0" style="border-radius:15px; background:red">
-                                                <div class="profile">
-                                                    <div class="profile-img text-primary rounded-top">
-                                                        <svg style="border-radius: 15px;" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 400 140.74"><defs><style>.cls-2{fill:#fff;opacity:0.1;}</style></defs><g><g><path d="M400,125A1278.49,1278.49,0,0,1,0,125V0H400Z"></path><path class="cls-2" d="M361.13,128c.07.83.15,1.65.27,2.46h0Q380.73,128,400,125V87l-1,0a38,38,0,0,0-38,38c0,.86,0,1.71.09,2.55C361.11,127.72,361.12,127.88,361.13,128Z"></path><path class="cls-2" d="M12.14,119.53c.07.79.15,1.57.26,2.34v0c.13.84.28,1.66.46,2.48l.07.3c.18.8.39,1.59.62,2.37h0q33.09,4.88,66.36,8,.58-1,1.09-2l.09-.18a36.35,36.35,0,0,0,1.81-4.24l.08-.24q.33-.94.6-1.9l.12-.41a36.26,36.26,0,0,0,.91-4.42c0-.19,0-.37.07-.56q.11-.86.18-1.73c0-.21,0-.42,0-.63,0-.75.08-1.51.08-2.28a36.5,36.5,0,0,0-73,0c0,.83,0,1.64.09,2.45C12.1,119.15,12.12,119.34,12.14,119.53Z"></path><circle class="cls-2" cx="94.5" cy="57.5" r="22.5"></circle><path class="cls-2" d="M276,0a43,43,0,0,0,43,43A43,43,0,0,0,362,0Z"></path></g></g></svg>
-                                                    
-<input for="imagen" type="file" id="imagen" name="imagen" accept="image/*" onchange="mostrarImagen(event)" class="input-imagen">
+<div style="width: 100%; background:white; border-radius:10px; margin-top:5.5%">
+<center>
+  <input for="imagen" type="file" id="imagen" name="imagen" accept="image/*" onchange="mostrarImagen(event)" class="input-imagen">
     
-    <label for="imagen" class="label-imagen" style="position: relative; left:49%; top:-300px">
+    <label for="imagen" class="label-imagen">
         <div id="imagen-preview" class="imagen-preview">
             <center>
             <label for="imagen" class="label-imagen">
-                <svg style="position: relative; top:20px;" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#96abc9" class="bi bi-plus-square" viewBox="0 0 16 16">
-                    <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-                </svg>
+            <svg style="position:relative; top:15px; margin:auto" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-image"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
             </label>
             </center>
         </div>
     </label>
-    
-                                                    </div>
-                                                </div>
-                                            </div>
+    </center>
+
+    <input type="text" style="width:94%; background-color:#ebf1f7; border:0px; border-radius:10px; height:6%; padding:1.5%; padding-left:2%; margin-top:-1.5%; color: #848484; margin-left:3%; margin-right:20%; outline:none" placeholder="Ingrese el nombre del grupo" maxlength="30">
+    <input type="text" style="width:94%; background-color:#ebf1f7; border:0px; border-radius:10px; height:6%; padding:1.5%; padding-left:2%; margin-bottom:1%; margin-top:1.7%; color: #848484; margin-left:3%; margin-right:20%; outline:none" placeholder="Descripcion del grupo">
+    <span style="--bs-text-opacity: 1;color: rgb(191, 204, 223) !important;margin-left:3%;font-size: 0.875em;">Ingrese el nombre del grupo, una breve descripcion y agregue una foto opcional.</span>
+    <br><br><br>
+                            <button style="margin-left: 3%; width:94%; padding:1.5%; background:#227afc; color:white" class="btn d-flex align-items-center" type="button">
+                                    Crear grupo
+                                    <span class="icon ms-auto">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                                    </span>
+                                </button>
+                                <br>
+</div>
                                     
                             
 
@@ -1192,18 +1552,21 @@ if(isset($_GET['ng']) || isset($_GET['grupos'])  || isset($_GET['archivados'])  
     margin: auto;
   max-width: 100%;
   max-height: 100%;
-  width: 80px;
-  height: 80px;
+  width: 75px;
+  height: 75px;
   border-radius:50%;
-
+  border: 5px solid white;
+    position: relative;
+    top:-30px;
+    background-color: #2787f5;
 }
 
 .imagen-preview img {
   margin: auto;
   max-width: 100%;
   max-height: 100%;
-  width: 80px;
-  height: 80px;
+  width: 75px;
+  height: 75px;
   border-radius:50%;
 }
 </style>
@@ -1233,15 +1596,100 @@ function mostrarImagen(event) {
   <!-- Contenido de Detalles-->
 
   <!-- Contenido de Miembros-->
-  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">...</div>
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+  <br>
+  
+  <div class="card-body" style="padding-top: 1.7%; padding-bottom:1.7%; height: 17%; background:white; border-radius: 15px; margin-bottom: 1.5%;">
+                                                <div class="row gx-5">
+                                                    <div class="col-auto">
+                                                        <div class="avatar avatar-online">
+                                                            <img src="https://avatars.githubusercontent.com/u/74835918?s=96&amp;v=4" alt="#" class="img-profile">
+                                                        </div>
+                                                    </div>
 
-</div>
+                                                    <div class="col" style="margin-left: -2%;">
+                                                        <div class="d-flex align-items-center mb-3">
+                                                            <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
+                                                        </div>
+
+                                                        <div class="d-flex align-items-center" style="margin-top: 0%;">
+                                                            <div class="line-clamp me-auto">
+                                                                Hello! Yeah, I'm going 
+                                                            </div>
+                                                            
+                                                            <div class="form-check" style="margin-top: -20px;">
+                                                                <input style="border:3px solid #0d6dfd6a;" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+ </div>
+  
+ <div class="card-body" style="padding-top: 1.7%; padding-bottom:1.7%; height: 17%; background:white; border-radius: 15px; margin-bottom: 1.5%;">
+                                                <div class="row gx-5">
+                                                    <div class="col-auto">
+                                                        <div class="avatar avatar-online">
+                                                            <img src="https://avatars.githubusercontent.com/u/74835918?s=96&amp;v=4" alt="#" class="img-profile">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col" style="margin-left: -2%;">
+                                                        <div class="d-flex align-items-center mb-3">
+                                                            <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
+                                                        </div>
+
+                                                        <div class="d-flex align-items-center" style="margin-top: 0%;">
+                                                            <div class="line-clamp me-auto">
+                                                                Hello! Yeah, I'm going 
+                                                            </div>
+                                                            
+                                                            <div class="form-check" style="margin-top: -20px;">
+                                                                <input style="border:3px solid #0d6dfd6a;" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+ </div>
+   
+ <div class="card-body" style="padding-top: 1.7%; padding-bottom:1.7%; height: 17%; background:white; border-radius: 15px; margin-bottom: 1.5%;">
+                                                <div class="row gx-5">
+                                                    <div class="col-auto">
+                                                        <div class="avatar avatar-online">
+                                                            <img src="https://avatars.githubusercontent.com/u/74835918?s=96&amp;v=4" alt="#" class="img-profile">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col" style="margin-left: -2%;">
+                                                        <div class="d-flex align-items-center mb-3">
+                                                            <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
+                                                        </div>
+
+                                                        <div class="d-flex align-items-center" style="margin-top: 0%;">
+                                                            <div class="line-clamp me-auto">
+                                                                Hello! Yeah, I'm going 
+                                                            </div>
+                                                            
+                                                            <div class="form-check" style="margin-top: -20px;">
+                                                                <input style="border:3px solid #0d6dfd6a;" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+ </div>
+ 
+
+  </div>
   <!-- Contenido de Miembros-->
 
 
 </div>
 
 
+</div>
+</form>
 </div>
 <?php
 }
