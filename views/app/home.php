@@ -243,37 +243,6 @@ backdrop-filter: saturate(180%) blur(20px);
 /*barra navegacion mobile */
 
 
-/*Chats lista mobile */
-.chat-list {
-  margin: 0 auto;
-}
-
-.chat-item {
-  display: flex;
-  align-items: center;
-  padding: 12px;
-  border-bottom: 1px solid #ddd;
-  cursor: pointer;
-}
-
-
-.chat-details {
-  flex: 1;
-  margin-left: 3%;
-}
-
-.last-message {
-  margin: 0;
-  font-size: 14px;
-  color: #666;
-}
-
-.chat-time {
-  font-size: 14px;
-  color: #666;
-}
-/*Chats lista mobile */
-
 </style>
 
 <body style="background-color: #f6f9fb;">
@@ -285,264 +254,381 @@ backdrop-filter: saturate(180%) blur(20px);
 
 
     <div style="margin:3%;">
-    <p style="font-size: 22px; font-weight: 600;">Chats</p>
 
+    <div  class="row" style=" margin-bottom:3%">
+        <div class="col-6">
+        <h5 style="font-size: 22px; font-weight: 500;">Chats</h5>  
+        </div> 
+
+        <div class="col-6 text-end">
+            <a href="" style="text-decoration: none;">
+                Ir a Archivados
+            </a>
+        </div>
+    </div>
+  
+    
     <input type="text" style="width:100%; background-color:#ebf1f7; border:0px; border-radius:10px; height:8%; padding:4%; padding-left:5%; color: #848484; outline:none" placeholder="Busca chats o usuarios">
    
     
     <!-- Lista de chats-->
 <br><br>
 
-<div class="chat-list">
-  <div class="chat-item">
-    <img src="https://cdn.pixabay.com/photo/2023/01/11/06/04/sokcho-eye-7711019_960_720.jpg" alt="Profile Picture" class="img-profile">
-    <div class="chat-details">
-    <h5 class="me-auto mb-0" style="font-size: 1.1075rem;">William Wright</h5>
-    <p class="last-message">Último mensaje recibido</p>
+
+
+<a href="?archivadoid=1" style="text-decoration: none; color:black">
+<div style="background-color: white; margin:1%; border-radius:15px;padding:2%; margin-top:3%; margin-bottom:3%">
+    <div class="row" style="margin:2%;">
+        <div class="col-2">
+            <div class="avatar avatar-online"  style="margin: auto;">
+                <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" class="img-profile">
+            </div>
+        </div>
+
+
+        <div class="col-10">
+            <div class="d-flex align-items-center mb-3">
+                <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
+                <span class="text-muted ms-2" style=" --bs-text-opacity: 1;color: #bfccdf!important;font-size: .665em; margin-right: 2%;">12:45 PM</span>
+            </div>
+        </div>
+        
     </div>
-    <span class="text-muted ms-2" style=" --bs-text-opacity: 1;color: #bfccdf!important;font-size: .965em;">12:45 PM</span>
 
-  </div>
-  
-  
-  <div class="chat-item">
-    <img src="https://cdn.pixabay.com/photo/2023/01/11/06/04/sokcho-eye-7711019_960_720.jpg" alt="Profile Picture" class="img-profile">
-    <div class="chat-details">
-    <h5 class="me-auto mb-0" style="font-size: 1.1075rem;">William Wright</h5>
-    <p class="last-message">Otro mensaje</p>
+    <div class="row" style="margin-left: 2%; margin-right:2%; margin-top:-4%">
+        <div class="col-2"></div>
+        <div class="col-10 text-truncate">
+        <div class="d-flex align-items-center mb-3">
+            <div class="line-clamp me-auto" style="width: 80%;">
+                Hello! Yeah, I'm going to meet my friend.
+            </div>
+
+            <div class="badge badge-circle bg-primary ms-5" style="margin-right: 5%;">
+                <span>3</span>
+            </div>
+
+            </div>
+
+        </div>
+
     </div>
-    <span class="text-muted ms-2" style=" --bs-text-opacity: 1;color: #bfccdf!important;font-size: .965em;">12:45 PM</span>
-
 </div>
-  <!-- Más elementos de la lista de chats -->
+</a>
+
+<a href="?archivadoid=1" style="text-decoration: none; color:black">
+<div style="background-color: white; margin:1%; border-radius:15px;padding:2%; margin-top:3%; margin-bottom:3%">
+    <div class="row" style="margin:2%;">
+        <div class="col-2">
+            <div class="avatar avatar-online"  style="margin: auto;">
+                <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" class="img-profile">
+            </div>
+        </div>
+
+
+        <div class="col-10">
+            <div class="d-flex align-items-center mb-3">
+                <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
+                <span class="text-muted ms-2" style=" --bs-text-opacity: 1;color: #bfccdf!important;font-size: .665em; margin-right: 2%;">12:45 PM</span>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="row" style="margin-left: 2%; margin-right:2%; margin-top:-4%">
+        <div class="col-2"></div>
+        <div class="col-10 text-truncate">
+        <div class="d-flex align-items-center mb-3">
+            <div class="line-clamp me-auto" style="width: 80%;">
+                Hello! Yeah, I'm going to meet my friend.
+            </div>
+
+            <div class="badge badge-circle bg-primary ms-5" style="margin-right: 5%;">
+                <span>3</span>
+            </div>
+
+            </div>
+
+        </div>
+
+    </div>
 </div>
+</a>
+
+<a href="?archivadoid=1" style="text-decoration: none; color:black">
+<div style="background-color: white; margin:1%; border-radius:15px;padding:2%; margin-top:3%; margin-bottom:3%">
+    <div class="row" style="margin:2%;">
+        <div class="col-2">
+            <div class="avatar avatar-online"  style="margin: auto;">
+                <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" class="img-profile">
+            </div>
+        </div>
 
 
+        <div class="col-10">
+            <div class="d-flex align-items-center mb-3">
+                <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
+                <span class="text-muted ms-2" style=" --bs-text-opacity: 1;color: #bfccdf!important;font-size: .665em; margin-right: 2%;">12:45 PM</span>
+            </div>
+        </div>
+        
+    </div>
 
-<a href="?archivadoid=2" style="text-decoration: none; color:black">
-                                            <div class="card-body" style="background-color: white; padding-top: 5%;  height: 17%; border-radius: 15px; margin-bottom: 4%;">
-                                                <div class="row gx-5">
-                                                    <div class="col-auto">
-                                                        <div class="avatar avatar-online">
-                                                            <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" class="img-profile">
-                                                        </div>
-                                                    </div>
+    <div class="row" style="margin-left: 2%; margin-right:2%; margin-top:-4%">
+        <div class="col-2"></div>
+        <div class="col-10 text-truncate">
+        <div class="d-flex align-items-center mb-3">
+            <div class="line-clamp me-auto" style="width: 80%;">
+                Hello! Yeah, I'm going to meet my friend.
+            </div>
 
-                                                    <div class="col" style="margin-left: -7%;">
-                                                        <div class="d-flex align-items-center mb-3">
-                                                            <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
-                                                            <span class="text-muted ms-2" style=" --bs-text-opacity: 1;color: #bfccdf!important;font-size: .665em;">12:45 PM</span>
-                                                        </div>
+            <div class="badge badge-circle bg-primary ms-5" style="margin-right: 5%;">
+                <span>3</span>
+            </div>
 
-                                                        <div class="d-flex align-items-center">
-                                                            <div class="line-clamp me-auto">
-                                                                Hello! Yeah, I'm going to meet my friend.
-                                                            </div>
+            </div>
 
-                                                           
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <br><br>
-                                            </div>
-          </a>
+        </div>
 
-          <a href="?archivadoid=2" style="text-decoration: none; color:black">
-                                            <div class="card-body" style="background-color: white; padding-top: 5%;  height: 17%; border-radius: 15px; margin-bottom: 4%;">
-                                                <div class="row gx-5">
-                                                    <div class="col-auto">
-                                                        <div class="avatar avatar-online">
-                                                            <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" class="img-profile">
-                                                        </div>
-                                                    </div>
+    </div>
+</div>
+</a>
 
-                                                    <div class="col" style="margin-left: -7%;">
-                                                        <div class="d-flex align-items-center mb-3">
-                                                            <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
-                                                            <span class="text-muted ms-2" style=" --bs-text-opacity: 1;color: #bfccdf!important;font-size: .665em;">12:45 PM</span>
-                                                        </div>
-
-                                                        <div class="d-flex align-items-center">
-                                                            <div class="line-clamp me-auto">
-                                                                Hello! Yeah, I'm going to meet my friend.
-                                                            </div>
-
-                                                           
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <br><br>
-                                            </div>
-          </a>
-
-          <a href="?archivadoid=2" style="text-decoration: none; color:black">
-                                            <div class="card-body" style="background-color: white; padding-top: 5%;  height: 17%; border-radius: 15px; margin-bottom: 4%;">
-                                                <div class="row gx-5">
-                                                    <div class="col-auto">
-                                                        <div class="avatar avatar-online">
-                                                            <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" class="img-profile">
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col" style="margin-left: -7%;">
-                                                        <div class="d-flex align-items-center mb-3">
-                                                            <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
-                                                            <span class="text-muted ms-2" style=" --bs-text-opacity: 1;color: #bfccdf!important;font-size: .665em;">12:45 PM</span>
-                                                        </div>
-
-                                                        <div class="d-flex align-items-center">
-                                                            <div class="line-clamp me-auto">
-                                                                Hello! Yeah, I'm going to meet my friend.
-                                                            </div>
-
-                                                           
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <br><br>
-                                            </div>
-          </a>
-
-          <a href="?archivadoid=2" style="text-decoration: none; color:black">
-                                            <div class="card-body" style="background-color: white; padding-top: 5%;  height: 17%; border-radius: 15px; margin-bottom: 4%;">
-                                                <div class="row gx-5">
-                                                    <div class="col-auto">
-                                                        <div class="avatar avatar-online">
-                                                            <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" class="img-profile">
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col" style="margin-left: -7%;">
-                                                        <div class="d-flex align-items-center mb-3">
-                                                            <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
-                                                            <span class="text-muted ms-2" style=" --bs-text-opacity: 1;color: #bfccdf!important;font-size: .665em;">12:45 PM</span>
-                                                        </div>
-
-                                                        <div class="d-flex align-items-center">
-                                                            <div class="line-clamp me-auto">
-                                                                Hello! Yeah, I'm going to meet my friend.
-                                                            </div>
-
-                                                           
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <br><br>
-                                            </div>
-          </a>
-
-          <a href="?archivadoid=2" style="text-decoration: none; color:black">
-                                            <div class="card-body" style="background-color: white; padding-top: 5%;  height: 17%; border-radius: 15px; margin-bottom: 4%;">
-                                                <div class="row gx-5">
-                                                    <div class="col-auto">
-                                                        <div class="avatar avatar-online">
-                                                            <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" class="img-profile">
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col" style="margin-left: -7%;">
-                                                        <div class="d-flex align-items-center mb-3">
-                                                            <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
-                                                            <span class="text-muted ms-2" style=" --bs-text-opacity: 1;color: #bfccdf!important;font-size: .665em;">12:45 PM</span>
-                                                        </div>
-
-                                                        <div class="d-flex align-items-center">
-                                                            <div class="line-clamp me-auto">
-                                                                Hello! Yeah, I'm going to meet my friend.
-                                                            </div>
-
-                                                           
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <br><br>
-                                            </div>
-          </a>
-
-          <a href="?archivadoid=2" style="text-decoration: none; color:black">
-                                            <div class="card-body" style="background-color: white; padding-top: 5%;  height: 17%; border-radius: 15px; margin-bottom: 4%;">
-                                                <div class="row gx-5">
-                                                    <div class="col-auto">
-                                                        <div class="avatar avatar-online">
-                                                            <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" class="img-profile">
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col" style="margin-left: -7%;">
-                                                        <div class="d-flex align-items-center mb-3">
-                                                            <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
-                                                            <span class="text-muted ms-2" style=" --bs-text-opacity: 1;color: #bfccdf!important;font-size: .665em;">12:45 PM</span>
-                                                        </div>
-
-                                                        <div class="d-flex align-items-center">
-                                                            <div class="line-clamp me-auto">
-                                                                Hello! Yeah, I'm going to meet my friend.
-                                                            </div>
-
-                                                           
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <br><br>
-                                            </div>
-          </a>
+<a href="?archivadoid=1" style="text-decoration: none; color:black">
+<div style="background-color: white; margin:1%; border-radius:15px;padding:2%; margin-top:3%; margin-bottom:3%">
+    <div class="row" style="margin:2%;">
+        <div class="col-2">
+            <div class="avatar avatar-online"  style="margin: auto;">
+                <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" class="img-profile">
+            </div>
+        </div>
 
 
-          <a href="?archivadoid=2" style="text-decoration: none; color:black">
-                                            <div class="card-body" style="background-color: white; padding-top: 5%;  height: 17%; border-radius: 15px; margin-bottom: 4%;">
-                                                <div class="row gx-5">
-                                                    <div class="col-auto">
-                                                        <div class="avatar avatar-online">
-                                                            <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" class="img-profile">
-                                                        </div>
-                                                    </div>
+        <div class="col-10">
+            <div class="d-flex align-items-center mb-3">
+                <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
+                <span class="text-muted ms-2" style=" --bs-text-opacity: 1;color: #bfccdf!important;font-size: .665em; margin-right: 2%;">12:45 PM</span>
+            </div>
+        </div>
+        
+    </div>
 
-                                                    <div class="col" style="margin-left: -7%;">
-                                                        <div class="d-flex align-items-center mb-3">
-                                                            <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
-                                                            <span class="text-muted ms-2" style=" --bs-text-opacity: 1;color: #bfccdf!important;font-size: .665em;">12:45 PM</span>
-                                                        </div>
+    <div class="row" style="margin-left: 2%; margin-right:2%; margin-top:-4%">
+        <div class="col-2"></div>
+        <div class="col-10 text-truncate">
+        <div class="d-flex align-items-center mb-3">
+            <div class="line-clamp me-auto" style="width: 80%;">
+                Hello! Yeah, I'm going to meet my friend.
+            </div>
 
-                                                        <div class="d-flex align-items-center">
-                                                            <div class="line-clamp me-auto">
-                                                                Hello! Yeah, I'm going to meet my friend.
-                                                            </div>
+            <div class="badge badge-circle bg-primary ms-5" style="margin-right: 5%;">
+                <span>3</span>
+            </div>
 
-                                                           
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <br><br>
-                                            </div>
-          </a>
+            </div>
 
-          <a href="?archivadoid=2" style="text-decoration: none; color:black">
-                                            <div class="card-body" style="background-color: white; padding-top: 5%;  height: 17%; border-radius: 15px; margin-bottom: 4%;">
-                                                <div class="row gx-5">
-                                                    <div class="col-auto">
-                                                        <div class="avatar avatar-online">
-                                                            <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" class="img-profile">
-                                                        </div>
-                                                    </div>
+        </div>
 
-                                                    <div class="col" style="margin-left: -7%;">
-                                                        <div class="d-flex align-items-center mb-3">
-                                                            <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
-                                                            <span class="text-muted ms-2" style=" --bs-text-opacity: 1;color: #bfccdf!important;font-size: .665em;">12:45 PM</span>
-                                                        </div>
+    </div>
+</div>
+</a>
 
-                                                        <div class="d-flex align-items-center">
-                                                            <div class="line-clamp me-auto">
-                                                                Hello! Yeah, I'm going to meet my friend.
-                                                            </div>
 
-                                                           
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <br><br>
-                                            </div>
-          </a>
+<a href="?archivadoid=1" style="text-decoration: none; color:black">
+<div style="background-color: white; margin:1%; border-radius:15px;padding:2%; margin-top:3%; margin-bottom:3%">
+    <div class="row" style="margin:2%;">
+        <div class="col-2">
+            <div class="avatar avatar-online"  style="margin: auto;">
+                <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" class="img-profile">
+            </div>
+        </div>
+
+
+        <div class="col-10">
+            <div class="d-flex align-items-center mb-3">
+                <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
+                <span class="text-muted ms-2" style=" --bs-text-opacity: 1;color: #bfccdf!important;font-size: .665em; margin-right: 2%;">12:45 PM</span>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="row" style="margin-left: 2%; margin-right:2%; margin-top:-4%">
+        <div class="col-2"></div>
+        <div class="col-10 text-truncate">
+        <div class="d-flex align-items-center mb-3">
+            <div class="line-clamp me-auto" style="width: 80%;">
+                Hello! Yeah, I'm going to meet my friend.
+            </div>
+
+            <div class="badge badge-circle bg-primary ms-5" style="margin-right: 5%;">
+                <span>3</span>
+            </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+</a>
+
+<a href="?archivadoid=1" style="text-decoration: none; color:black">
+<div style="background-color: white; margin:1%; border-radius:15px;padding:2%; margin-top:3%; margin-bottom:3%">
+    <div class="row" style="margin:2%;">
+        <div class="col-2">
+            <div class="avatar avatar-online"  style="margin: auto;">
+                <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" class="img-profile">
+            </div>
+        </div>
+
+
+        <div class="col-10">
+            <div class="d-flex align-items-center mb-3">
+                <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
+                <span class="text-muted ms-2" style=" --bs-text-opacity: 1;color: #bfccdf!important;font-size: .665em; margin-right: 2%;">12:45 PM</span>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="row" style="margin-left: 2%; margin-right:2%; margin-top:-4%">
+        <div class="col-2"></div>
+        <div class="col-10 text-truncate">
+        <div class="d-flex align-items-center mb-3">
+            <div class="line-clamp me-auto" style="width: 80%;">
+                Hello! Yeah, I'm going to meet my friend.
+            </div>
+
+            <div class="badge badge-circle bg-primary ms-5" style="margin-right: 5%;">
+                <span>3</span>
+            </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+</a>
+
+<a href="?archivadoid=1" style="text-decoration: none; color:black">
+<div style="background-color: white; margin:1%; border-radius:15px;padding:2%; margin-top:3%; margin-bottom:3%">
+    <div class="row" style="margin:2%;">
+        <div class="col-2">
+            <div class="avatar avatar-online"  style="margin: auto;">
+                <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" class="img-profile">
+            </div>
+        </div>
+
+
+        <div class="col-10">
+            <div class="d-flex align-items-center mb-3">
+                <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
+                <span class="text-muted ms-2" style=" --bs-text-opacity: 1;color: #bfccdf!important;font-size: .665em; margin-right: 2%;">12:45 PM</span>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="row" style="margin-left: 2%; margin-right:2%; margin-top:-4%">
+        <div class="col-2"></div>
+        <div class="col-10 text-truncate">
+        <div class="d-flex align-items-center mb-3">
+            <div class="line-clamp me-auto" style="width: 80%;">
+                Hello! Yeah, I'm going to meet my friend.
+            </div>
+
+            <div class="badge badge-circle bg-primary ms-5" style="margin-right: 5%;">
+                <span>3</span>
+            </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+</a>
+
+<a href="?archivadoid=1" style="text-decoration: none; color:black">
+<div style="background-color: white; margin:1%; border-radius:15px;padding:2%; margin-top:3%; margin-bottom:3%">
+    <div class="row" style="margin:2%;">
+        <div class="col-2">
+            <div class="avatar avatar-online"  style="margin: auto;">
+                <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" class="img-profile">
+            </div>
+        </div>
+
+
+        <div class="col-10">
+            <div class="d-flex align-items-center mb-3">
+                <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
+                <span class="text-muted ms-2" style=" --bs-text-opacity: 1;color: #bfccdf!important;font-size: .665em; margin-right: 2%;">12:45 PM</span>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="row" style="margin-left: 2%; margin-right:2%; margin-top:-4%">
+        <div class="col-2"></div>
+        <div class="col-10 text-truncate">
+        <div class="d-flex align-items-center mb-3">
+            <div class="line-clamp me-auto" style="width: 80%;">
+                Hello! Yeah, I'm going to meet my friend.
+            </div>
+
+            <div class="badge badge-circle bg-primary ms-5" style="margin-right: 5%;">
+                <span>3</span>
+            </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+</a>
+
+<a href="?archivadoid=1" style="text-decoration: none; color:black">
+<div style="background-color: white; margin:1%; border-radius:15px;padding:2%; margin-top:3%; margin-bottom:3%">
+    <div class="row" style="margin:2%;">
+        <div class="col-2">
+            <div class="avatar avatar-online"  style="margin: auto;">
+                <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" class="img-profile">
+            </div>
+        </div>
+
+
+        <div class="col-10">
+            <div class="d-flex align-items-center mb-3">
+                <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
+                <span class="text-muted ms-2" style=" --bs-text-opacity: 1;color: #bfccdf!important;font-size: .665em; margin-right: 2%;">12:45 PM</span>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="row" style="margin-left: 2%; margin-right:2%; margin-top:-4%">
+        <div class="col-2"></div>
+        <div class="col-10 text-truncate">
+        <div class="d-flex align-items-center mb-3">
+            <div class="line-clamp me-auto" style="width: 80%;">
+                Hello! Yeah, I'm going to meet my friend.
+            </div>
+
+            <div class="badge badge-circle bg-primary ms-5" style="margin-right: 5%;">
+                <span>3</span>
+            </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+</a>
+
+
     <!-- Lista de chats-->
 
     </div>
@@ -615,12 +701,10 @@ backdrop-filter: saturate(180%) blur(20px);
     </li>
     
      <li>    
-     <?php if((isset($_GET['archivados']))){ ?>       
-     <a href="?archivados" class="nav-link py-3 rounded-0" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Products" data-bs-original-title="Products">
+     <?php if((isset($_GET['grupos']))){ ?>       
+     <a href="?grupoid" class="nav-link py-3 rounded-0" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Products" data-bs-original-title="Products">
         <button type="button" style="background-color: transparent; border:none" class="position-relative">
-        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="#0d6efd" class="bi bi-archive" viewBox="0 0 16 16">
-          <path d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 12.5V5a1 1 0 0 1-1-1V2zm2 3v7.5A1.5 1.5 0 0 0 3.5 14h9a1.5 1.5 0 0 0 1.5-1.5V5H2zm13-3H1v2h14V2zM5 7.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
-        </svg>
+        <img src="https://img.icons8.com/ios/30/0d6efd/groups.png">
         
         <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
             2
@@ -628,11 +712,9 @@ backdrop-filter: saturate(180%) blur(20px);
         </button>
         </a> 
         <?php } else{ ?>
-            <a href="?archivados" class="nav-link py-3 rounded-0" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Products" data-bs-original-title="Products">
+            <a href="?grupos" class="nav-link py-3 rounded-0" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Products" data-bs-original-title="Products">
         <button type="button" style="background-color: transparent; border:none" class="position-relative">
-        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="#96abc9" class="bi bi-archive" viewBox="0 0 16 16">
-          <path d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 12.5V5a1 1 0 0 1-1-1V2zm2 3v7.5A1.5 1.5 0 0 0 3.5 14h9a1.5 1.5 0 0 0 1.5-1.5V5H2zm13-3H1v2h14V2zM5 7.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
-        </svg>
+        <img src="https://img.icons8.com/ios/30/96abc9/groups.png">
         
         <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
             2
@@ -3376,10 +3458,6 @@ if(isset(($_GET['grupoid'])))
   </div>
 </div>
 <!-- Modal informacion sobre grupo -->
-
 <!-- Modals -->
-
-
-
 </body>
 </html>
