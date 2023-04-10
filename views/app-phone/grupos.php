@@ -5,27 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-        <!--Boostrap-->   
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+      <!--Boostrap-->   
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../../css/estilos.css">
     <link rel="stylesheet" href="../../css/home.css">
     <!--Boostrap--> 
 </head>
+
 <body>
+
 
 <div class="mobile d-block d-md-block d-lg-none" >
 
 
-<div class="col-lg-4" style="background-color:#f6f9fb; overflow-x:hidden; overflow-y:scroll; height:49rem; padding:2%">
 
-<div style="margin:1%;">
+    <div style="margin:3%;">
 
-
-<div  class="row" style=" margin-bottom:3%">
+    <div  class="row" style=" margin-bottom:3%">
         <div class="col-6">
-        <h5 style="font-size: 22px; font-weight: 500;">Personas</h5>  
+        <h5 style="font-size: 22px; font-weight: 500;">Grupos</h5>  
         </div> 
 
         <div class="col-6 text-end">
@@ -34,273 +34,377 @@
             </a>
         </div>
     </div>
-    
-<div style="margin-top:-5% ;"></div>
-<br>
-<input type="text" style="width:100%; background-color:#ebf1f7; border:0px; border-radius:10px; height:7%; padding:4%; padding-left:5%; color: #848484; outline:none" placeholder="Busca chats o usuarios">
   
-  <br><br>
-          
-
-  <a href="?archivadoid=1" style="text-decoration: none; color:black">
-<div style="background-color: white; margin:1%; border-radius:15px;padding:2%; margin-top:3%; margin-bottom:3%">
-    <div class="row" style="margin:2%;">
-        <div class="col-2">
-            <div class="avatar avatar-online" style="margin: auto;">
-                <img src="https://avatars.githubusercontent.com/u/74835918?s=96&amp;v=4" alt="#" class="img-profile">
-            </div>
-        </div>
-
-
-        <div class="col-10">
-            <div class="d-flex align-items-center mb-3">
-                <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
-            </div>
-        </div>
-        
-    </div>
-
-    <div class="row" style="margin-left: 2%; margin-right:2%; margin-top:-4%">
-        <div class="col-2"></div>
-        <div class="col-10 text-truncate">
-        <div class="d-flex align-items-center mb-3">
-            <div class="line-clamp me-auto" style="width: 80%;">
-                Hello! Yeah, I'm going to meet my friend.
-            </div>
-
-            <div style="background-color: #ebf1f7; padding:3%; border-radius:8px">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#9faacc" class="bi bi-chat-left-text" viewBox="0 0 16 16">
-                                                                <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"></path>
-                                                                <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"></path>
-                                                                </svg>
-                                                                </div>
-                                                                
-
-            </div>
-
-        </div>
-
-    </div>
-</div>
-</a>
-
-
-<a href="?archivadoid=1" style="text-decoration: none; color:black">
-<div style="background-color: white; margin:1%; border-radius:15px;padding:2%; margin-top:3%; margin-bottom:3%">
-    <div class="row" style="margin:2%;">
-        <div class="col-2">
-            <div class="avatar avatar-online" style="margin: auto;">
-                <img src="https://avatars.githubusercontent.com/u/74835918?s=96&amp;v=4" alt="#" class="img-profile">
-            </div>
-        </div>
-
-
-        <div class="col-10">
-            <div class="d-flex align-items-center mb-3">
-                <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
-            </div>
-        </div>
-        
-    </div>
-
-    <div class="row" style="margin-left: 2%; margin-right:2%; margin-top:-4%">
-        <div class="col-2"></div>
-        <div class="col-10 text-truncate">
-        <div class="d-flex align-items-center mb-3">
-            <div class="line-clamp me-auto" style="width: 80%;">
-                Hello! Yeah, I'm going to meet my friend.
-            </div>
-
-            <div style="background-color: #ebf1f7; padding:3%; border-radius:8px">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#9faacc" class="bi bi-chat-left-text" viewBox="0 0 16 16">
-                                                                <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"></path>
-                                                                <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"></path>
-                                                                </svg>
-                                                                </div>
-                                                                
-
-            </div>
-
-        </div>
-
-    </div>
-</div>
-</a>
-
-<a href="?archivadoid=1" style="text-decoration: none; color:black">
-<div style="background-color: white; margin:1%; border-radius:15px;padding:2%; margin-top:3%; margin-bottom:3%">
-    <div class="row" style="margin:2%;">
-        <div class="col-2">
-            <div class="avatar avatar-online" style="margin: auto;">
-                <img src="https://avatars.githubusercontent.com/u/74835918?s=96&amp;v=4" alt="#" class="img-profile">
-            </div>
-        </div>
-
-
-        <div class="col-10">
-            <div class="d-flex align-items-center mb-3">
-                <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
-            </div>
-        </div>
-        
-    </div>
-
-    <div class="row" style="margin-left: 2%; margin-right:2%; margin-top:-4%">
-        <div class="col-2"></div>
-        <div class="col-10 text-truncate">
-        <div class="d-flex align-items-center mb-3">
-            <div class="line-clamp me-auto" style="width: 80%;">
-                Hello! Yeah, I'm going to meet my friend.
-            </div>
-
-            <div style="background-color: #ebf1f7; padding:3%; border-radius:8px">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#9faacc" class="bi bi-chat-left-text" viewBox="0 0 16 16">
-                                                                <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"></path>
-                                                                <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"></path>
-                                                                </svg>
-                                                                </div>
-                                                                
-
-            </div>
-
-        </div>
-
-    </div>
-</div>
-</a>
-
-<a href="?archivadoid=1" style="text-decoration: none; color:black">
-<div style="background-color: white; margin:1%; border-radius:15px;padding:2%; margin-top:3%; margin-bottom:3%">
-    <div class="row" style="margin:2%;">
-        <div class="col-2">
-            <div class="avatar avatar-online" style="margin: auto;">
-                <img src="https://avatars.githubusercontent.com/u/74835918?s=96&amp;v=4" alt="#" class="img-profile">
-            </div>
-        </div>
-
-
-        <div class="col-10">
-            <div class="d-flex align-items-center mb-3">
-                <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
-            </div>
-        </div>
-        
-    </div>
-
-    <div class="row" style="margin-left: 2%; margin-right:2%; margin-top:-4%">
-        <div class="col-2"></div>
-        <div class="col-10 text-truncate">
-        <div class="d-flex align-items-center mb-3">
-            <div class="line-clamp me-auto" style="width: 80%;">
-                Hello! Yeah, I'm going to meet my friend.
-            </div>
-
-            <div style="background-color: #ebf1f7; padding:3%; border-radius:8px">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#9faacc" class="bi bi-chat-left-text" viewBox="0 0 16 16">
-                                                                <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"></path>
-                                                                <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"></path>
-                                                                </svg>
-                                                                </div>
-                                                                
-
-            </div>
-
-        </div>
-
-    </div>
-</div>
-</a>
-
-<a href="?archivadoid=1" style="text-decoration: none; color:black">
-<div style="background-color: white; margin:1%; border-radius:15px;padding:2%; margin-top:3%; margin-bottom:3%">
-    <div class="row" style="margin:2%;">
-        <div class="col-2">
-            <div class="avatar avatar-online" style="margin: auto;">
-                <img src="https://avatars.githubusercontent.com/u/74835918?s=96&amp;v=4" alt="#" class="img-profile">
-            </div>
-        </div>
-
-
-        <div class="col-10">
-            <div class="d-flex align-items-center mb-3">
-                <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
-            </div>
-        </div>
-        
-    </div>
-
-    <div class="row" style="margin-left: 2%; margin-right:2%; margin-top:-4%">
-        <div class="col-2"></div>
-        <div class="col-10 text-truncate">
-        <div class="d-flex align-items-center mb-3">
-            <div class="line-clamp me-auto" style="width: 80%;">
-                Hello! Yeah, I'm going to meet my friend.
-            </div>
-
-            <div style="background-color: #ebf1f7; padding:3%; border-radius:8px">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#9faacc" class="bi bi-chat-left-text" viewBox="0 0 16 16">
-                                                                <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"></path>
-                                                                <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"></path>
-                                                                </svg>
-                                                                </div>
-                                                                
-
-            </div>
-
-        </div>
-
-    </div>
-</div>
-</a>
-<a href="?archivadoid=1" style="text-decoration: none; color:black">
-<div style="background-color: white; margin:1%; border-radius:15px;padding:2%; margin-top:3%; margin-bottom:3%">
-    <div class="row" style="margin:2%;">
-        <div class="col-2">
-            <div class="avatar avatar-online" style="margin: auto;">
-                <img src="https://avatars.githubusercontent.com/u/74835918?s=96&amp;v=4" alt="#" class="img-profile">
-            </div>
-        </div>
-
-
-        <div class="col-10">
-            <div class="d-flex align-items-center mb-3">
-                <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
-            </div>
-        </div>
-        
-    </div>
-
-    <div class="row" style="margin-left: 2%; margin-right:2%; margin-top:-4%">
-        <div class="col-2"></div>
-        <div class="col-10 text-truncate">
-        <div class="d-flex align-items-center mb-3">
-            <div class="line-clamp me-auto" style="width: 80%;">
-                Hello! Yeah, I'm going to meet my friend.
-            </div>
-
-            <div style="background-color: #ebf1f7; padding:3%; border-radius:8px">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#9faacc" class="bi bi-chat-left-text" viewBox="0 0 16 16">
-                                                                <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"></path>
-                                                                <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"></path>
-                                                                </svg>
-                                                                </div>
-                                                                
-
-            </div>
-
-        </div>
-
-    </div>
-</div>
-</a>
- 
-
-                                       
-</div>
-</div>
     
-   <!-- Barra de navegacion-->
-   <nav class="navbar-mobile">
+    <input type="text" style="width:100%; background-color:#ebf1f7; border:0px; border-radius:10px; height:8%; padding:4%; padding-left:5%; color: #848484; outline:none" placeholder="Busca chats o usuarios">
+   
+    
+    <!-- Lista de chats-->
+<br><br>
+
+
+
+<a href="?archivadoid=1" style="text-decoration: none; color:black">
+<div style="background-color: white; margin:1%; border-radius:15px;padding:2%; margin-top:3%; margin-bottom:3%">
+    <div class="row" style="margin:2%;">
+        <div class="col-2">
+            <div class="avatar avatar-online"  style="margin: auto;">
+                <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" class="img-profile">
+            </div>
+        </div>
+
+
+        <div class="col-10">
+            <div class="d-flex align-items-center mb-3">
+                <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
+                <span class="text-muted ms-2" style=" --bs-text-opacity: 1;color: #bfccdf!important;font-size: .665em; margin-right: 2%;">12:45 PM</span>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="row" style="margin-left: 2%; margin-right:2%; margin-top:-4%">
+        <div class="col-2"></div>
+        <div class="col-10 text-truncate">
+        <div class="d-flex align-items-center mb-3">
+            <div class="line-clamp me-auto" style="width: 80%;">
+                Hello! Yeah, I'm going to meet my friend.
+            </div>
+
+            <div class="badge badge-circle bg-primary ms-5" style="margin-right: 5%;">
+                <span>3</span>
+            </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+</a>
+
+<a href="?archivadoid=1" style="text-decoration: none; color:black">
+<div style="background-color: white; margin:1%; border-radius:15px;padding:2%; margin-top:3%; margin-bottom:3%">
+    <div class="row" style="margin:2%;">
+        <div class="col-2">
+            <div class="avatar avatar-online"  style="margin: auto;">
+                <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" class="img-profile">
+            </div>
+        </div>
+
+
+        <div class="col-10">
+            <div class="d-flex align-items-center mb-3">
+                <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
+                <span class="text-muted ms-2" style=" --bs-text-opacity: 1;color: #bfccdf!important;font-size: .665em; margin-right: 2%;">12:45 PM</span>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="row" style="margin-left: 2%; margin-right:2%; margin-top:-4%">
+        <div class="col-2"></div>
+        <div class="col-10 text-truncate">
+        <div class="d-flex align-items-center mb-3">
+            <div class="line-clamp me-auto" style="width: 80%;">
+                Hello! Yeah, I'm going to meet my friend.
+            </div>
+
+            <div class="badge badge-circle bg-primary ms-5" style="margin-right: 5%;">
+                <span>3</span>
+            </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+</a>
+
+<a href="?archivadoid=1" style="text-decoration: none; color:black">
+<div style="background-color: white; margin:1%; border-radius:15px;padding:2%; margin-top:3%; margin-bottom:3%">
+    <div class="row" style="margin:2%;">
+        <div class="col-2">
+            <div class="avatar avatar-online"  style="margin: auto;">
+                <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" class="img-profile">
+            </div>
+        </div>
+
+
+        <div class="col-10">
+            <div class="d-flex align-items-center mb-3">
+                <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
+                <span class="text-muted ms-2" style=" --bs-text-opacity: 1;color: #bfccdf!important;font-size: .665em; margin-right: 2%;">12:45 PM</span>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="row" style="margin-left: 2%; margin-right:2%; margin-top:-4%">
+        <div class="col-2"></div>
+        <div class="col-10 text-truncate">
+        <div class="d-flex align-items-center mb-3">
+            <div class="line-clamp me-auto" style="width: 80%;">
+                Hello! Yeah, I'm going to meet my friend.
+            </div>
+
+            <div class="badge badge-circle bg-primary ms-5" style="margin-right: 5%;">
+                <span>3</span>
+            </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+</a>
+
+<a href="?archivadoid=1" style="text-decoration: none; color:black">
+<div style="background-color: white; margin:1%; border-radius:15px;padding:2%; margin-top:3%; margin-bottom:3%">
+    <div class="row" style="margin:2%;">
+        <div class="col-2">
+            <div class="avatar avatar-online"  style="margin: auto;">
+                <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" class="img-profile">
+            </div>
+        </div>
+
+
+        <div class="col-10">
+            <div class="d-flex align-items-center mb-3">
+                <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
+                <span class="text-muted ms-2" style=" --bs-text-opacity: 1;color: #bfccdf!important;font-size: .665em; margin-right: 2%;">12:45 PM</span>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="row" style="margin-left: 2%; margin-right:2%; margin-top:-4%">
+        <div class="col-2"></div>
+        <div class="col-10 text-truncate">
+        <div class="d-flex align-items-center mb-3">
+            <div class="line-clamp me-auto" style="width: 80%;">
+                Hello! Yeah, I'm going to meet my friend.
+            </div>
+
+            <div class="badge badge-circle bg-primary ms-5" style="margin-right: 5%;">
+                <span>3</span>
+            </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+</a>
+
+
+<a href="?archivadoid=1" style="text-decoration: none; color:black">
+<div style="background-color: white; margin:1%; border-radius:15px;padding:2%; margin-top:3%; margin-bottom:3%">
+    <div class="row" style="margin:2%;">
+        <div class="col-2">
+            <div class="avatar avatar-online"  style="margin: auto;">
+                <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" class="img-profile">
+            </div>
+        </div>
+
+
+        <div class="col-10">
+            <div class="d-flex align-items-center mb-3">
+                <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
+                <span class="text-muted ms-2" style=" --bs-text-opacity: 1;color: #bfccdf!important;font-size: .665em; margin-right: 2%;">12:45 PM</span>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="row" style="margin-left: 2%; margin-right:2%; margin-top:-4%">
+        <div class="col-2"></div>
+        <div class="col-10 text-truncate">
+        <div class="d-flex align-items-center mb-3">
+            <div class="line-clamp me-auto" style="width: 80%;">
+                Hello! Yeah, I'm going to meet my friend.
+            </div>
+
+            <div class="badge badge-circle bg-primary ms-5" style="margin-right: 5%;">
+                <span>3</span>
+            </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+</a>
+
+<a href="?archivadoid=1" style="text-decoration: none; color:black">
+<div style="background-color: white; margin:1%; border-radius:15px;padding:2%; margin-top:3%; margin-bottom:3%">
+    <div class="row" style="margin:2%;">
+        <div class="col-2">
+            <div class="avatar avatar-online"  style="margin: auto;">
+                <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" class="img-profile">
+            </div>
+        </div>
+
+
+        <div class="col-10">
+            <div class="d-flex align-items-center mb-3">
+                <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
+                <span class="text-muted ms-2" style=" --bs-text-opacity: 1;color: #bfccdf!important;font-size: .665em; margin-right: 2%;">12:45 PM</span>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="row" style="margin-left: 2%; margin-right:2%; margin-top:-4%">
+        <div class="col-2"></div>
+        <div class="col-10 text-truncate">
+        <div class="d-flex align-items-center mb-3">
+            <div class="line-clamp me-auto" style="width: 80%;">
+                Hello! Yeah, I'm going to meet my friend.
+            </div>
+
+            <div class="badge badge-circle bg-primary ms-5" style="margin-right: 5%;">
+                <span>3</span>
+            </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+</a>
+
+<a href="?archivadoid=1" style="text-decoration: none; color:black">
+<div style="background-color: white; margin:1%; border-radius:15px;padding:2%; margin-top:3%; margin-bottom:3%">
+    <div class="row" style="margin:2%;">
+        <div class="col-2">
+            <div class="avatar avatar-online"  style="margin: auto;">
+                <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" class="img-profile">
+            </div>
+        </div>
+
+
+        <div class="col-10">
+            <div class="d-flex align-items-center mb-3">
+                <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
+                <span class="text-muted ms-2" style=" --bs-text-opacity: 1;color: #bfccdf!important;font-size: .665em; margin-right: 2%;">12:45 PM</span>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="row" style="margin-left: 2%; margin-right:2%; margin-top:-4%">
+        <div class="col-2"></div>
+        <div class="col-10 text-truncate">
+        <div class="d-flex align-items-center mb-3">
+            <div class="line-clamp me-auto" style="width: 80%;">
+                Hello! Yeah, I'm going to meet my friend.
+            </div>
+
+            <div class="badge badge-circle bg-primary ms-5" style="margin-right: 5%;">
+                <span>3</span>
+            </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+</a>
+
+<a href="?archivadoid=1" style="text-decoration: none; color:black">
+<div style="background-color: white; margin:1%; border-radius:15px;padding:2%; margin-top:3%; margin-bottom:3%">
+    <div class="row" style="margin:2%;">
+        <div class="col-2">
+            <div class="avatar avatar-online"  style="margin: auto;">
+                <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" class="img-profile">
+            </div>
+        </div>
+
+
+        <div class="col-10">
+            <div class="d-flex align-items-center mb-3">
+                <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
+                <span class="text-muted ms-2" style=" --bs-text-opacity: 1;color: #bfccdf!important;font-size: .665em; margin-right: 2%;">12:45 PM</span>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="row" style="margin-left: 2%; margin-right:2%; margin-top:-4%">
+        <div class="col-2"></div>
+        <div class="col-10 text-truncate">
+        <div class="d-flex align-items-center mb-3">
+            <div class="line-clamp me-auto" style="width: 80%;">
+                Hello! Yeah, I'm going to meet my friend.
+            </div>
+
+            <div class="badge badge-circle bg-primary ms-5" style="margin-right: 5%;">
+                <span>3</span>
+            </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+</a>
+
+<a href="?archivadoid=1" style="text-decoration: none; color:black">
+<div style="background-color: white; margin:1%; border-radius:15px;padding:2%; margin-top:3%; margin-bottom:3%">
+    <div class="row" style="margin:2%;">
+        <div class="col-2">
+            <div class="avatar avatar-online"  style="margin: auto;">
+                <img src="https://avatars.githubusercontent.com/u/74835918?s=96&v=4" alt="#" class="img-profile">
+            </div>
+        </div>
+
+
+        <div class="col-10">
+            <div class="d-flex align-items-center mb-3">
+                <h5 class="me-auto mb-0" style="font-size: .9375rem;">William Wright</h5>
+                <span class="text-muted ms-2" style=" --bs-text-opacity: 1;color: #bfccdf!important;font-size: .665em; margin-right: 2%;">12:45 PM</span>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="row" style="margin-left: 2%; margin-right:2%; margin-top:-4%">
+        <div class="col-2"></div>
+        <div class="col-10 text-truncate">
+        <div class="d-flex align-items-center mb-3">
+            <div class="line-clamp me-auto" style="width: 80%;">
+                Hello! Yeah, I'm going to meet my friend.
+            </div>
+
+            <div class="badge badge-circle bg-primary ms-5" style="margin-right: 5%;">
+                <span>3</span>
+            </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+</a>
+<br><br>
+
+
+    <!-- Lista de chats-->
+
+    </div>
+
+
+    <!-- Barra de navegacion-->
+    <nav class="navbar-mobile">
   <ul>
     <li> 
             <a href="crear-grupo.php" class="a nav-link  py-3 rounded-0" aria-current="page" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Home" data-bs-original-title="Home">
@@ -314,7 +418,7 @@
     <li>
             <a href="amigos.php" class="a nav-link  py-3 rounded-0" aria-current="page" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Home" data-bs-original-title="Home">
                             <div class="icon icon-xl">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0d6efd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#96abc9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
                             </div>
         </a>
     </li>
@@ -337,7 +441,7 @@
      <li>         
      <a href="grupos.php" class="nav-link py-3 rounded-0" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Products" data-bs-original-title="Products">
         <button type="button" style="background-color: transparent; border:none" class="position-relative">
-        <img src="https://img.icons8.com/ios/30/96abc9/groups.png">
+        <img src="https://img.icons8.com/ios/30/0d6efd/groups.png">
         
         <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
             2
@@ -359,7 +463,11 @@
 </nav>
     <!-- Barra de navegacion-->
 
-
 </div>
+
+
+    
+
+
 </body>
 </html>

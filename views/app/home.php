@@ -25,225 +25,11 @@ if(isset($_SESSION['user'])){
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../../css/home.css">
     <!--Boostrap--> 
 </head>
 
-<style>
-  
-     input[type="file"] {
-        display: none;
-      }
-  .row{
-    margin: 0;
-  }
-  ::-webkit-scrollbar {
-    display: none;
-}
-.img-profile{
-  height: 44px;
-  width: 44px;
-  border-radius: 50%;
 
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.line-clamp {
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    color: #9faacc;
-}
-.me-auto {
-    margin-right: auto!important;
-}
-.badge-circle {
-    position: relative;
-    border-radius: 2.25rem;
-    height: calc(1em + .778em);
-    padding: .389em;
-}
-.bg-primary {
-    --bs-bg-opacity: 0.9;
-    background-color: rgba(var(--bs-primary-rgb),var(--bs-bg-opacity))!important;
-}
-.ms-5 {
-    margin-left: 1rem!important;
-}
-.badge {
-    display: inline-block;
-    padding: .389em .6em;
-    font-size: .6em;
-    font-weight: 500;
-    line-height: 1;
-    color: #fff;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: baseline;
-    border-radius: 10px;
-}
-.message {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
-}
-.message-inner {
-    max-width: 100%;
-    min-width: 0;
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-}
-.message-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
-.message-content:not(:last-child) .message-text {
-    border-bottom-left-radius: .25rem;
-}
-.message-text {
-    background: #ebf1f7;
-    border-radius: .6rem;
-    padding: 1rem 1.25rem;
-    color: #95aac9;
-}
-.dropdown-item:hover{
-    background-color: #f1f1f1;
-
-}
-.message-out .message-gallery, .message-out .message-text {
-    margin-left: .25rem;
-    margin-right: 0;
-}
-.message.message-out {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-    -ms-flex-direction: row-reverse;
-    flex-direction: row-reverse;
-}
-.message-out .message-content:not(:last-child) .message-text {
-    border-bottom-left-radius: .6rem;
-    border-bottom-right-radius: .25rem;
-}
-.message-content:not(:last-child) .message-text {
-    border-bottom-left-radius: .25rem;
-}
-.message-out .message-text {
-    background: #2787f5;
-    border-radius: .6rem;
-    color: #fff;
-}
-.message-gallery, .message-text {
-    overflow: hidden;
-    margin-right: .25rem;
-}
-.message-footer {
-    line-height: 1.3;
-    margin-top: .1rem;
-    margin-bottom: .5rem;
-    margin-left: .5rem;
-}
-.extra-small {
-    font-size: .665em;
-}
-.text-muted {
-    --bs-text-opacity: 1;
-    color: #bfccdf!important;
-}
-.message-inner {
-    margin-left: 1rem;
-}
-.message-inner {
-    margin-left: .5rem;
-}
-.sombras{
-  box-shadow: 0px -1px 8px -2px rgba(0,0,0,0.04);
--webkit-box-shadow: 0px -1px 8px -2px rgba(0,0,0,0.04);
--moz-box-shadow: 0px -1px 8px -2px rgba(0,0,0,0.04);
-}
-
-
-.nav-pills {
-    background: #ebf1f7;
-    border-radius: .6rem;
-    padding: .3125rem;
-}
-
-.nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
-}
-
-dl, ol, ul {
-    margin-top: 0;
-    margin-bottom: 1rem;
-}
-
-ol, ul {
-    padding-left: 2rem;
-}
-
-
-ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
-
-/*barra navegacion mobile */
-.navbar-mobile {
-backdrop-filter: saturate(180%) blur(20px);
-  background-color: rgba(255,255,255,.72);
-  width: 100%;
-  left:0;
-  right:0;
-  height: 50px;
-  position:fixed;
-  bottom:0;
-  padding-top:0.5%;
-}
-
-.navbar-mobile ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 100%;
-}
-
-.navbar-mobile li a {
-  display: block;
-  color: #fff;
-  text-align: center;
-  font-size: 16px;
-  text-decoration: none;
-  padding: 10px;
-}
-/*barra navegacion mobile */
-
-
-</style>
 
 <body style="background-color: #f6f9fb;">
 
@@ -627,6 +413,7 @@ backdrop-filter: saturate(180%) blur(20px);
     </div>
 </div>
 </a>
+<br><br>
 
 
     <!-- Lista de chats-->
@@ -638,43 +425,25 @@ backdrop-filter: saturate(180%) blur(20px);
     <nav class="navbar-mobile">
   <ul>
     <li> 
-        <?php if((isset($_GET['ng']))){ ?>
-         <a href="?ng" class="a nav-link  py-3 rounded-0" aria-current="page" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Home" data-bs-original-title="Home">
-          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="#0d6efd" class="a bi bi-pencil-square " viewBox="0 0 16 16">
-            <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
-            <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
-          </svg>
-        </a>
-        <?php } else{ ?>
-            <a href="?ng" class="a nav-link  py-3 rounded-0" aria-current="page" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Home" data-bs-original-title="Home">
+            <a href="../app-phone/crear-grupo.php" class="a nav-link  py-3 rounded-0" aria-current="page" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Home" data-bs-original-title="Home">
           <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="#96abc9" class="a bi bi-pencil-square " viewBox="0 0 16 16">
             <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
             <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
           </svg>
         </a>
-        <?php }?>
     </li>
 
     <li>
-    <?php if((isset($_GET['personas']))){ ?>
-        <a href="?personas"class="a nav-link  py-3 rounded-0" aria-current="page" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Home" data-bs-original-title="Home">
-                            <div class="icon icon-xl">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0d6efd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-                            </div>
-        </a>
-        <?php } else{ ?>
-            <a href="?personas" class="a nav-link  py-3 rounded-0" aria-current="page" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Home" data-bs-original-title="Home">
+            <a href="../app-phone/amigos.php" class="a nav-link  py-3 rounded-0" aria-current="page" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Home" data-bs-original-title="Home">
                             <div class="icon icon-xl">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#96abc9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
                             </div>
         </a>
-        <?php }?>  
     </li>
     
  
     <li>    
-    <?php if((isset($_GET['inicio']))){ ?>    
-    <a href="?inicio" class="nav-link py-3 rounded-0" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Orders" data-bs-original-title="Orders">
+    <a href="home.php" class="nav-link py-3 rounded-0" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Orders" data-bs-original-title="Orders">
         <button type="button" style="background-color: transparent; border:none" class="position-relative">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#0d6efd" class="bi bi-chat-left" viewBox="0 0 16 16">
           <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
@@ -685,34 +454,10 @@ backdrop-filter: saturate(180%) blur(20px);
         </span>
         </button>
         </a>
-        <?php } else{ ?>
-            <a href="?inicio" class="nav-link py-3 rounded-0" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Orders" data-bs-original-title="Orders">
-        <button type="button" style="background-color: transparent; border:none" class="position-relative">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#96abc9" class="bi bi-chat-left" viewBox="0 0 16 16">
-          <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-        </svg>
-
-        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
-            1
-        </span>
-        </button>
-        </a>
-        <?php }?>  
     </li>
     
-     <li>    
-     <?php if((isset($_GET['grupos']))){ ?>       
-     <a href="?grupoid" class="nav-link py-3 rounded-0" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Products" data-bs-original-title="Products">
-        <button type="button" style="background-color: transparent; border:none" class="position-relative">
-        <img src="https://img.icons8.com/ios/30/0d6efd/groups.png">
-        
-        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
-            2
-        </span>
-        </button>
-        </a> 
-        <?php } else{ ?>
-            <a href="?grupos" class="nav-link py-3 rounded-0" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Products" data-bs-original-title="Products">
+     <li>        
+     <a href="../app-phone/grupos.php" class="nav-link py-3 rounded-0" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Products" data-bs-original-title="Products">
         <button type="button" style="background-color: transparent; border:none" class="position-relative">
         <img src="https://img.icons8.com/ios/30/96abc9/groups.png">
         
@@ -721,25 +466,17 @@ backdrop-filter: saturate(180%) blur(20px);
         </span>
         </button>
         </a> 
-        <?php }?>  
+    
+      
     </li>
     
     <li> 
-    <?php if((isset($_GET['ajustes']))){ ?>           
-    <a href="?ajustes" class="nav-link py-3 rounded-0" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Customers" data-bs-original-title="Customers">
-        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="#0d6efd" class="bi bi-gear" viewBox="0 0 16 16">
-          <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
-          <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
-        </svg>
-        </a>
-        <?php } else{ ?>
-        <a href="?ajustes" class="nav-link py-3 rounded-0" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Customers" data-bs-original-title="Customers">
+        <a href="../app-phone/ajustes.php" class="nav-link py-3 rounded-0" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Customers" data-bs-original-title="Customers">
         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="#96abc9" class="bi bi-gear" viewBox="0 0 16 16">
           <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
           <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
         </svg>
         </a>
-        <?php }?>  
     </li>
 
   </ul>
