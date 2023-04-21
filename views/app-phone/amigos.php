@@ -18,7 +18,7 @@
 <div class="mobile d-block d-md-block d-lg-none" >
 
 
-<div class="col-lg-4" style="background-color:#f6f9fb; overflow-x:hidden; overflow-y:scroll; height:49rem; padding:2%">
+<div class="col-lg-4" style="background-color:#f6f9fb; overflow-x:hidden; overflow-y:scroll; height:auto; padding:2% ">
 
 <div style="margin:1%;">
 

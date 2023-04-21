@@ -62,12 +62,12 @@
                                                 <br><hr style="width:96%; margin:auto; color:#95aac9; opacity:0.2; margin-bottom:3%">
 
                                             <form action="" method="post">
-                                                <input type="text" style="width:96%; margin:auto; background-color:#ebf1f7; border:0px; margin-bottom:2.5%; border-radius:10px; height:8%; padding:2.5%; padding-left:3%; color: #848484; outline:none" placeholder="Nombre">
-                                                <input type="text" style="width:96%; margin:auto; background-color:#ebf1f7; margin-bottom:2.5%; border:0px; border-radius:10px; height:8%; padding:2.5%; padding-left:3%; color: #848484; outline:none" placeholder="Apellidos">
-                                                <input type="text" style="width:96%; margin:auto; background-color:#ebf1f7; margin-bottom:2.5%; border:0px; border-radius:10px; height:8%; padding:2.5%; padding-left:3%; color: #848484; outline:none" placeholder="Correo Electronico">
-                                                <input type="text" style="width:96%; margin:auto; background-color:#ebf1f7; margin-bottom:2.5%; border:0px; border-radius:10px; height:8%; padding:2.5%; padding-left:3%; color: #848484; outline:none" placeholder="Info.">
+                                                <input type="text" style="width:96%; margin:auto; background-color:#ebf1f7; border:0px; margin-bottom:2.5%; border-radius:10px; height:8%; padding:3%; padding-left:3%; color: #848484; outline:none" placeholder="Nombre">
+                                                <input type="text" style="width:96%; margin:auto; background-color:#ebf1f7; margin-bottom:2.5%; border:0px; border-radius:10px; height:8%; padding:3%; padding-left:3%; color: #848484; outline:none" placeholder="Apellidos">
+                                                <input type="text" style="width:96%; margin:auto; background-color:#ebf1f7; margin-bottom:2.5%; border:0px; border-radius:10px; height:8%; padding:3%; padding-left:3%; color: #848484; outline:none" placeholder="Correo Electronico">
+                                                <input type="text" style="width:96%; margin:auto; background-color:#ebf1f7; margin-bottom:2.5%; border:0px; border-radius:10px; height:8%; padding:3%; padding-left:3%; color: #848484; outline:none" placeholder="Info.">
                                                 <br>
-                                                <button type="submit" class="btn btn-primary" style="width: 96%; margin-top:1.2%; padding-top:2.5%; padding-bottom:2.5%"> Guardar</button>
+                                                <button type="submit" class="btn btn-primary" style="width: 96%; margin-top:1.2%; padding-top:3%; padding-bottom:3%"> Guardar</button>
                                             </form>
                                             
                                         </div>
@@ -89,11 +89,11 @@
                                                 <br><hr style="width:96%; margin:auto; color:#95aac9; opacity:0.2; margin-bottom:3%">
 
                                             <form action="" method="post">
-                                                <input type="password" style="width:96%; margin:auto; background-color:#ebf1f7; border:0px; margin-bottom:2.5%; border-radius:10px; height:8%; padding:2.5%; padding-left:3%; color: #848484; outline:none" placeholder="Contraseña actual">
-                                                <input type="password" style="width:96%; margin:auto; background-color:#ebf1f7; margin-bottom:2.5%; border:0px; border-radius:10px; height:8%; padding:2.5%; padding-left:3%; color: #848484; outline:none" placeholder="Nueva contraseña">
-                                                <input type="password" style="width:96%; margin:auto; background-color:#ebf1f7; margin-bottom:2.5%; border:0px; border-radius:10px; height:8%; padding:2.5%; padding-left:3%; color: #848484; outline:none" placeholder="Verifica la contraseña">
+                                                <input type="password" style="width:96%; margin:auto; background-color:#ebf1f7; border:0px; margin-bottom:2.5%; border-radius:10px; height:8%; padding:3%; padding-left:3%; color: #848484; outline:none" placeholder="Contraseña actual">
+                                                <input type="password" style="width:96%; margin:auto; background-color:#ebf1f7; margin-bottom:2.5%; border:0px; border-radius:10px; height:8%; padding:3%; padding-left:3%; color: #848484; outline:none" placeholder="Nueva contraseña">
+                                                <input type="password" style="width:96%; margin:auto; background-color:#ebf1f7; margin-bottom:2.5%; border:0px; border-radius:10px; height:8%; padding:3%; padding-left:3%; color: #848484; outline:none" placeholder="Verifica la contraseña">
                                                 <br>
-                                                <button type="submit" class="btn btn-primary" style="width: 96%; margin-top:1.2%; padding-top:2.5%; padding-bottom:2.5%"> Guardar</button>
+                                                <button type="submit" class="btn btn-primary" style="width: 96%; margin-top:1.2%; padding-top:3%; padding-bottom:3%"> Guardar</button>
                                             </form>
                                             
                                         </div>
